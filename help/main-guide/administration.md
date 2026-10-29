@@ -53,7 +53,7 @@ ht-degree: 6%
 
 {{mm-mca-rebranding}}
 
-使用[Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)管理Marketing Campaign Analytics产品和用户。
+使用[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)管理Marketing Campaign Analytics产品和用户。
 
 要使Marketing Campaign Analytics正常运行，您必须设置正确的权限。
 
@@ -63,7 +63,7 @@ ht-degree: 6%
 
 1. 从左侧面板中选择![用户](/help/assets/icons/User.svg) **[!UICONTROL Roles]**。
 
-1. 选择现有角色，或使用&#x200B;**[!UICONTROL Create role]**&#x200B;创建角色（例如，**Marketing Campaign Analytics**）。 如果选择现有角色，请选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**&#x200B;以编辑该角色的权限。 有关详细信息，请参阅[管理角色](https://helpx.adobe.com/enterprise/using/admin-console.html)。
+1. 选择现有角色，或使用&#x200B;**[!UICONTROL Create role]**&#x200B;创建角色（例如，**Marketing Campaign Analytics**）。 如果选择现有角色，请选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**&#x200B;以编辑该角色的权限。 有关详细信息，请参阅[管理角色](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)。
 
 1. 确保您为角色选择了一个或多个沙箱。
 
