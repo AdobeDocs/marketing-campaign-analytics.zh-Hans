@@ -2,7 +2,7 @@
 title: 在Marketing Campaign Analytics中构建模型
 description: 了解如何在Marketing Campaign Analytics中构建模型，包括如何设置、配置和指定模型的高级选项。 例如，转化目标、接触点、广告和计划。
 feature: Models
-solution: Mix Modeler
+solution: Marketing Campaign Analytics
 exl-id: e1093c09-1e23-460b-92de-cfb0061112fd
 TQID: 'https://experienceleague.adobe.com/cFNaPV6-R3d5ogcBfOyEVNqJoIvfg2JBzVeedjrtEq4'
 product_v2:
@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Email marketing
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 67f7acd32f3456e71dbea0baf147bf2dc1e01980
+source-git-commit: 803bbfb863f55ef5d043c1e1592acd8c6d4bab44
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 7%
