@@ -1,25 +1,25 @@
 ---
-title: Mix Modeler 概述
-description: 了解 Mix Modeler 的功能和能力概述。
-short-description: 了解 Mix Modeler 的功能和能力概述。
+title: Marketing Campaign Analytics概述
+description: 大致了解Marketing Campaign Analytics的功能和特性。
+short-description: 大致了解Marketing Campaign Analytics的功能和特性。
 feature: Plans, Harmonized Data, Models
 exl-id: aa1018d5-b073-4dfb-b40c-ca16a8970b2f
 autotag-review: '2026-05-01T09:14:10.130Z'
-TQID: 'https://experienceleague.adobe.com/66NcfgGeMriaUXgpJ-h2MV2PBISSE5GMz3WWuF-i2u4'
+TQID: 'https://experienceleague.adobe.com/p5U62D65U-w6VtaGOsBuJlKWxcz2p-Qgku6zq-ezNQo'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a234aebd-3855-4376-a64d-29b38411e0c5
     internal-label: Marketing mix modeling
-  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
-    internal-label: Marketing touch attribution
-  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
-    internal-label: Plans
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
     internal-label: Harmonized data
+  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
     internal-label: Models
+  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
+    internal-label: Marketing touch attribution
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -40,24 +40,24 @@ topic_v2:
     internal-label: Machine learning
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 3%
+source-wordcount: '786'
+ht-degree: 0%
 ---
-# Mix Modeler 概述
+# Marketing Campaign Analytics概述
 
-Mix Modeler由Adobe Sensei提供支持，允许营销人员跨所有渠道（付费、免费和拥有）衡量促销活动并全面优化规划。 其统一的方法体系在营销接触点和聚合级别都进行递增式测量，同时确保完全一致的结果。
+Marketing Campaign Analytics由Adobe Sensei提供支持，允许营销人员跨所有渠道（付费、免费和拥有）衡量促销活动并全面优化规划。 其统一的方法体系在营销接触点和聚合级别都进行递增式测量，同时确保完全一致的结果。
 
-Mix Modeler通过数字和离线营销的全面（端到端）衡量应用程序，提供所有营销活动对业务和营销活动结果的增量影响。
+Marketing Campaign Analytics通过数字和离线营销的全面（端到端）衡量应用程序，提供所有营销活动对业务和营销活动结果的增量影响。
 
-Mix Modeler在战略和战术层面提供了以下类型的优化和可操作的见解，以便您更好地了解：
+Marketing Campaign Analytics在战略和战术层面提供了以下类型的优化和可操作的见解，以便您更好地了解：
 
 * 跨各种渠道的营销支出和产生的效果，以及
 * 建议的投资水平，以实现未来的业务目标。
 
 
-要完成此功能，Mix Modeler将执行以下操作：
+要完成此功能，Marketing Campaign Analytics将执行以下操作：
 
 * 自下而上（事件级别）数据和自上而下（聚合级别）数据，
 * 外部市场因素及内部因素，以及
@@ -70,7 +70,7 @@ AI/ML双向传输学习将营销组合建模(MMM)和多接触点归因(MTA)结�
 
 ## 功能
 
-Mix Modeler提供以下功能：
+Marketing Campaign Analytics提供以下功能：
 
 | 功能 | 描述 |
 |---|---|
@@ -83,12 +83,12 @@ Mix Modeler提供以下功能：
 
 >[!MORELIKETHIS]
 >
->[了解Mix Modeler工作流程](workflow.md)
+>[了解Marketing Campaign Analytics工作流程](workflow.md)
 
 
 ### 营销组合建模(MMM)
 
-Mix Modeler中的营销组合建模是一种对隐私友好的机器学习分析，用于衡量各种营销策略和业务因素对转化量度的增量影响。 它有助于企业和营销人员了解
+Marketing Campaign Analytics中的营销组合建模是一种对隐私友好的机器学习分析，用于衡量各种营销策略和业务因素对转化量度的增量影响。 它有助于企业和营销人员了解
 
 * 行销策略之有效性，
 * 业务因素对客户行为的影响，以及
@@ -96,7 +96,7 @@ Mix Modeler中的营销组合建模是一种对隐私友好的机器学习分析
 
 此全面的分析使企业能够跨不同的业务线、区域、渠道和营销活动战略性地分配营销预算，同时还能提供对未来事件业务影响的预测性分析。
 
-Mix Modeler的营销组合建模功能是解决以下用例的基础：
+Marketing Campaign Analytics的营销组合建模功能是解决以下用例的基础：
 
 * 执行报告：使执行官能够按渠道、区域、SKU等了解营销的真正增量影响。
 * 战略规划：为长期营销战略提供信息，并为未来的营销活动设定现实的目标和基准
@@ -106,9 +106,9 @@ Mix Modeler的营销组合建模功能是解决以下用例的基础：
 
 ### 多点触控归因(MTA)
 
-Mix Modeler中的多触点归因是一种可选的机器学习分析，可利用它将点数归因到导致转化事件的事件级接触点。 营销人员使用此归因来帮助量化客户历程中各个营销接触点的营销影响，并且可跟踪。 这些数字营销活动接触点通常为显示广告点击次数、电子邮件发送次数、电子邮件打开次数和付费搜索点击次数。 多点接触归因无法衡量大多数离线接触点，例如平面广告、广告牌或电视商业广告和商业因素。 这些接触点仅具有无法拼合到客户历程的摘要级别数据。
+Marketing Campaign Analytics中的多触点归因是一种可选的机器学习分析，可利用它将点数归因到导致转化事件的事件级接触点。 营销人员使用此归因来帮助量化客户历程中各个营销接触点的营销影响，并且可跟踪。 这些数字营销活动接触点通常为显示广告点击次数、电子邮件发送次数、电子邮件打开次数和付费搜索点击次数。 多点接触归因无法衡量大多数离线接触点，例如平面广告、广告牌或电视商业广告和商业因素。 这些接触点仅具有无法拼合到客户历程的摘要级别数据。
 
-Mix Modeler的多接触点归因支持两种类别的分数：
+Marketing Campaign Analytics的多接触点归因支持两种类别的分数：
 
 * 算法分数，包括增量分数和影响分数：
   * 影响分数是每个营销接触点负责的转化率部分。
@@ -116,13 +116,13 @@ Mix Modeler的多接触点归因支持两种类别的分数：
 
 * 基于规则的分数，包括First touch、Last touch、线性、U形和时间衰减。
 
-您可以在以下用例中使用Mix Modeler的多接触点归因功能：
+您可以在以下用例中使用Marketing Campaign Analytics的多接触点归因功能：
 
 * 营销活动预算分配：为跨营销渠道的预算分配决策提供信息。
 * 活动优化：在每个渠道中，了解哪些活动、创意和关键字更适合哪些SKU或Geo。 通过这种了解，您可以了解每个渠道，以便营销团队能够优化其策略。
 * 完整funnel事件级归因：了解营销在整个客户历程中的影响。 例如，免费帐户注册以实现付费转化和其他。
 * 伙伴评价：根据归因结果评价机构和伙伴的有效性。
 
-有关如何访问Mix Modeler中的多接触点归因分析，请参阅[模型分析 — 归因](../models/insights.md#attribution)。
+有关如何访问Marketing Campaign Analytics中的多接触点归因分析，请参阅[模型分析 — 归因](../models/insights.md#attribution)。
 
 

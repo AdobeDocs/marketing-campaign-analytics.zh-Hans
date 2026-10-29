@@ -1,6 +1,6 @@
 ---
-title: 在Mix Modeler中构建模型
-description: 了解如何在Mix Modeler中构建模型，包括如何设置、配置和指定模型的高级选项。 例如，转化目标、接触点、广告和计划。
+title: 在Marketing Campaign Analytics中构建模型
+description: 了解如何在Marketing Campaign Analytics中构建模型，包括如何设置、配置和指定模型的高级选项。 例如，转化目标、接触点、广告和计划。
 feature: Models
 solution: Mix Modeler
 exl-id: e1093c09-1e23-460b-92de-cfb0061112fd
@@ -32,22 +32,24 @@ topic_v2:
     internal-label: Email marketing
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d83e095cdcd2954b5c6cc5f4b3f32a26cf27ed9a
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 9%
+source-wordcount: '1903'
+ht-degree: 7%
 ---
 # 构建模型
 
+{{mm-mca-rebranding}}
+
 为了构建自定义AI支持的模型，界面提供了分步引导式模型配置流程。
 
-在[!DNL Mix Modeler]的![模型](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**&#x200B;界面中，选择&#x200B;**[!UICONTROL Open model canvas]**。
+在[!DNL Marketing Campaign Analytics]的![模型](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**&#x200B;界面中，选择&#x200B;**[!UICONTROL Open model canvas]**。
 
 ## 设置
 
 您在&#x200B;**[!UICONTROL Setup]**&#x200B;步骤中定义名称和描述：
 
-1. 输入您的模型&#x200B;**[!UICONTROL Name]**，例如`Demo model`。 输入&#x200B;**[!UICONTROL Description]**，例如`Demo model to explore AI features of Mix Modeler`。
+1. 输入您的模型&#x200B;**[!UICONTROL Name]**，例如`Demo model`。 输入&#x200B;**[!UICONTROL Description]**，例如`Demo model to explore AI features of Marketing Campaign Analytics`。
 
    ![模型名称和描述](/help/assets/model-name-description.png)
 
@@ -61,7 +63,12 @@ ht-degree: 9%
 >abstract="市场营销接触点是接收者、个人和/或 cookie 级别的市场营销事件，用于评估营销投资对基于数字或基于收入的转化率的影响。<br/><br/>您无法通过有重叠数据的接触点设置模型，而且必须至少有一个有支出的接触点。"
 
 
-您可以在&#x200B;**[!UICONTROL Configure]**&#x200B;步骤中配置模型。 配置涉及转化目标的定义、营销接触点、符合条件的数据群体、外部和内部因素等。
+您可以在&#x200B;**[!UICONTROL Configure]**&#x200B;步骤中配置模型。 配置涉及启用完整的funnel建模、定义转化目标、营销接触点、符合条件的数据群体、外部和内部因素等。
+
+1. 如果要启用[完全funnel建模](./overview.md#full-funnel-modeling)，请在&#x200B;**[!UICONTROL Full funnel model]**&#x200B;部分中：
+
+   1. 选择 **[!UICONTROL Enable full funnel modeling]**。
+   1. 从&#x200B;**[!UICONTROL Upper funnel conversion]**&#x200B;下拉菜单中选择上限转换。
 
 1. 在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;部分中：
 
@@ -115,21 +122,41 @@ ht-degree: 9%
 
    * 在容器之间选择&#x200B;**And**&#x200B;和&#x200B;**Or**，以便为符合条件的数据群体构建更复杂的定义。
 
-1. 您可以在&#x200B;**[!UICONTROL Factor dataset]**&#x200B;部分管理包含内部或外部因素的数据集。
-
-   ![模型 — 因子数据集步骤](../assets/model-factors-dataset-step.png)
+1. 您可以在&#x200B;**[!UICONTROL Factor]**&#x200B;部分管理包含内部或外部因素的数据集。
 
    * 要添加因子数据集，请选择&#x200B;**[!UICONTROL Add Factor]**。 最多可以向模型添加30个因子。
 
+     ![模型 — 因子步骤](../assets/model-factors-dataset-step.png)
+
      1. 从下拉菜单中选择&#x200B;**[!UICONTROL Factor dataset]**。 可用因子是您在[数据集规则](/help/harmonize-data/dataset-rules.md#create-a-dataset-rule)中定义协调字段的因子。
+
         基于所选数据集，**[!UICONTROL Factor type]**&#x200B;为&#x200B;**[!UICONTROL Internal]**&#x200B;或&#x200B;**[!UICONTROL External]**。
 
      1. 从下拉菜单中选择&#x200B;**[!UICONTROL Impact on conversion]**。 可用选项为： **[!UICONTROL Auto]**、**[!UICONTROL Positive]**&#x200B;或&#x200B;**[!UICONTROL Negative]**。 默认选项是&#x200B;**[!UICONTROL Auto]**，它允许模型确定因子数据集的影响。
 
    * 要删除因子数据集，请选择![CrossSize200](/help/assets/icons/CrossSize400.svg)。
 
+   * 如果您的模型已启用[完整funnel建模](./overview.md#full-funnel-modeling)，则需要为添加到模型的因子定义因果关系和因子因果关系。
+
+     ![模型 — 因子步骤funnel](../assets/model-factors-dataset-step-funnel.png)
+
+     * 要定义因果关系，请在&#x200B;**[!UICONTROL Causal relationship]** s表中，为每个渠道(**[!UICONTROL Source]**)选择![SelectBox](/help/assets/icons/SelectBox.svg)，以确定上转换KPI（在&#x200B;**[!UICONTROL Full funnel modeling]**&#x200B;分区中选为&#x200B;**[!UICONTROL Upper funnel conversion]**）和下转换KPI（在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;分区中选为&#x200B;**[!UICONTROL Conversion]**）是否受该渠道的影响。
+
+       您可以为上转化KPI和下转化KPI选择列标题![SelectBox](/help/assets/icons/SelectBox.svg)以快速定义所有渠道都会影响KPI。
+
+     * 在定义因子后，您可以定义因子因果关系。 要定义聚合器因果关系，请在&#x200B;**[!UICONTROL Factor causal relationships]**&#x200B;表中，为每个因子(**[!UICONTROL Factor]**)选择![SelectBox](/help/assets/icons/SelectBox.svg)，以确定上转换KPI（在&#x200B;**[!UICONTROL Full funnel modeling]**&#x200B;节中选为&#x200B;**[!UICONTROL Upper funnel conversion]**）和下转换KPI（在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;节中选为&#x200B;**[!UICONTROL Conversion]**）是否受该因子影响。
+
+       您可以为上转换KPI和下转换KPI选择列标题![SelectBox](/help/assets/icons/SelectBox.svg)以快速定义影响KPI的所有因素。
+
 
 1. 要为模型定义回看窗口期，请在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;部分的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the conversion]**&#x200B;中输入一个介于`1`和`52`之间的值。
+
+   如果您的模型已启用[完全funnel建模](./overview.md#full-funnel-modeling)：
+
+   * 要为较低级别的funnel定义回看窗口期，请在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;部分的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the conversion]**&#x200B;中为&#x200B;**[!UICONTROL Lower funnel]**&#x200B;输入一个介于`1`和`52`之间的值。
+
+   * 要定义上层funnel的回看窗口期，请在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;部分的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the upper funnel conversion]**&#x200B;中为&#x200B;**[!UICONTROL Upper funnel]**&#x200B;输入一个介于`1`和`52`之间的值。
+
 
 1. 要定义模型的训练时间范围，请在&#x200B;**[!UICONTROL Define training window]**&#x200B;处，选择开始评分转化的位置。
 
@@ -137,7 +164,7 @@ ht-degree: 9%
 
    您可以在以下各项之间进行选择：
 
-   * **[!UICONTROL Have Mix Modeler select a helpful training window]**&#x200B;和
+   * **[!UICONTROL Have Marketing Campaign Analytics select a helpful training window]**&#x200B;和
 
    * **[!UICONTROL Manually input a training window]**. 选中后，在&#x200B;**[!UICONTROL Include events the following years prior to a conversion]**&#x200B;中定义年数。
 
@@ -159,7 +186,14 @@ ht-degree: 9%
 
 在&#x200B;**[!UICONTROL Spend share]**&#x200B;部分中：
 
-* 要在营销数据稀疏时使用历史营销投资比率通知模型，请激活&#x200B;**[!UICONTROL Allow spend share]**。 建议使用此设置，尤其是在以下情况下：
+* 要在营销数据稀疏时使用历史营销投资比率通知模型，请激活&#x200B;**[!UICONTROL Allow spend share]**。
+
+  如果您的模型已启用[完全funnel建模](./overview.md#full-funnel-modeling)：
+
+  * 要在营销数据稀疏时使用历史营销投资比率通知模型，请激活&#x200B;**[!UICONTROL Allow spend share for the lower funnel]**。
+  * 要在营销数据稀疏时使用历史营销投资比率通知模型，请激活&#x200B;**[!UICONTROL Allow spend share for the upper funnel]**。
+
+* 建议使用此设置，尤其是在以下情况下：
   * 渠道没有足够的观察次数（例如，消费频率低、展示次数或点击次数少）。
   * 您正在对数据可能稀疏的尖峰但常规且潜在的高消费媒体（如某些品牌的电视节目）建模。
 
@@ -167,6 +201,8 @@ ht-degree: 9%
   >
   >对于一次性投资（例如超级碗广告），应将该数据作为一个因素考虑，而不是依赖支出份额。
   >
+
+
 
 ### MTA
 
@@ -182,6 +218,10 @@ ht-degree: 9%
 ![模型 — 先验知识](/help/assets/model-prior-knowledge-step.png)
 
 1. 选择默认为&#x200B;**[!UICONTROL Absolute values]**&#x200B;的&#x200B;**[!UICONTROL Rule type]**。
+
+1. 如果您的模型已启用[完全funnel建模](./overview.md#full-funnel-modeling)：
+
+   * 从&#x200B;**[!UICONTROL Select metric]**&#x200B;中选择&#x200B;**[!UICONTROL Lower funnel]**&#x200B;或&#x200B;**[!UICONTROL Upper funnel]**&#x200B;作为funnel量度以用于先验知识。
 
 1. 使用&#x200B;**[!UICONTROL Contribution proportion]**&#x200B;列为&#x200B;**[!UICONTROL Name]**&#x200B;下列出的任何渠道指定贡献百分比。
 
@@ -201,6 +241,8 @@ ht-degree: 9%
 ![渠道adstock](/help/assets/channel-ad-stock.png)
 
 要配置渠道adstock：
+
+* 如果您的模型已启用[完全funnel建模](./overview.md#full-funnel-modeling)，请从&#x200B;**[!UICONTROL Select metric]**&#x200B;中选择&#x200B;**[!UICONTROL Lower funnel]**&#x200B;或&#x200B;**[!UICONTROL Upper funnel]**&#x200B;作为用于渠道adstock的funnel量度。
 
 * 对于每个渠道(**[!UICONTROL Name]**)，定义一个&#x200B;**[!UICONTROL Lag (weeks)]**、**[!UICONTROL Min Lookback (weeks)]**&#x200B;和&#x200B;**[!UICONTROL Max Lookback (weeks)]**&#x200B;值。 对于每个值：
 
@@ -231,7 +273,7 @@ ht-degree: 9%
 
    * **[!UICONTROL Daily]**：输入有效的时间（例如`05:22 pm`）或使用![时钟](/help/assets/icons/Clock.svg)定义时间。
    * **[!UICONTROL Weekly]**：选择一周中的某一天并输入有效的时间（例如`05:22 pm`）或使用![时钟](/help/assets/icons/Clock.svg)来定义时间。
-   * **[!UICONTROL Monthly]**：从“在每次运行时运行”下拉菜单中选择一个月中的某一天，并输入有效时间（例如`05:22 pm`），或使用![时钟](/help/assets/icons/Clock.svg)定义时间。
+   * **[!UICONTROL Monthly]**：从“在每次运行时运行”下拉菜单中选择一个月中的某一天，并输入有效时间（例如`05:22 pm`），或使用![时钟](/help/assets/icons/Clock.svg)来定义时间。
 
 1. 从下拉菜单中选择&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
 

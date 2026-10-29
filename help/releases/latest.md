@@ -1,16 +1,27 @@
 ---
-title: 查看当前的Mix Modeler发行说明
-description: 最新 Mix Modeler 发行说明
+title: 查看当前的Marketing Campaign Analytics发行说明
+description: 最新Marketing Campaign Analytics发行说明
 feature-set: Experience Cloud
 feature: Release Notes
 exl-id: 38a47672-2af2-437c-b769-4d5febb941f5
-TQID: https://experienceleague.adobe.com/8o2hpkneIUMbBNEZfw9TsQLaGuPOxqF-XA2TV9cJnqc
+autotag-review: '2026-05-01T09:06:55.437Z'
+TQID: 'https://experienceleague.adobe.com/fZpl0bWBtDzOWllXsyGPErO637PaIdJ-2E-l-89JpDk'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: ca6bcd6f-f5ca-4e5f-a5ae-7dce7177bde9
     internal-label: Release notes
+  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -23,17 +34,25 @@ topic_v2:
     internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-autotag-review: '2026-05-01T09:06:55.437Z'
-source-git-commit: 1e6444e672e85d9f3f666bc865d020fb67c45b09
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 6%
+source-wordcount: '583'
+ht-degree: 5%
 ---
-# 当前的Mix Modeler发行说明
+# 当前的Marketing Campaign Analytics发行说明
 
-**上次更新日期**：2026年8月19日。
+{{mm-mca-rebranding}}
 
-以下发行说明涵盖最新版本的Mix Modeler。 Mix Modeler版本在持续交付模型上运行，该模型允许大约每月一次的发布。 因此，这些发行说明将会相应更新，因此请定期检查。
+**上次更新时间**：2026年10月29日。
+
+以下发行说明涵盖最新版本的Marketing Campaign Analytics。 Marketing Campaign Analytics版本在持续交付模型上运行，该模型允许大约每月一次的发布。 因此，这些发行说明将会相应更新，因此请定期检查。
+
+## 2026年10
+
+| 功能 | 描述 | [转出开始](#release-strategy) | [正式发布](#release-strategy) |
+|---|---|---|---|
+| **完整funnel建模** | 您可以在构建模型时启用[完整funnel建模](/help/models/overview.md#full-funnel-modeling)，以显示营销如何通过funnel移动客户。 模型分析中提供了[funnel流量可视化图表](/help/models/insights.md#funnel-flow)，用于深入分析整个funnel。 | 2026年10月29日 | 2026年10月29日 |
+
 
 ## 2026 年 8 月
 
@@ -69,7 +88,7 @@ ht-degree: 6%
 
 ## 发布策略
 
-[!UICONTROL Mix Modeler]使用功能标志（也称为“切换”）控制新功能的可见性，从而允许在完全发布之前进行受控规模测试。 此发布策略包括以下阶段：
+[!UICONTROL Marketing Campaign Analytics]使用功能标志（也称为“切换”）控制新功能的可见性，从而允许在完全发布之前进行受控规模测试。 此发布策略包括以下阶段：
 
 * **有限测试**：从Adobe内部用户的测试开始的分阶段发布。 然后，它提供给一小部分客户使用，以确保该功能满足客户的需求和期望。
 

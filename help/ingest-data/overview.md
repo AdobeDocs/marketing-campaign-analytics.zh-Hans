@@ -1,33 +1,44 @@
 ---
 title: 摄取数据概述
-description: 了解如何将数据摄取到Mix Modeler。
+description: 了解如何将数据摄取到Marketing Campaign Analytics。
 feature: Datasets, Event Datasets, Summary Datasets, Aggregate Datasets
 exl-id: dc16a601-bbd9-467b-8a7e-c32654d4069a
-TQID: https://experienceleague.adobe.com/XPr8Av7skzHBYoU6WtNw8PtHFrPH-MokICrLwoB2-J0
+autotag-review: '2026-05-01T09:11:34.506Z'
+TQID: 'https://experienceleague.adobe.com/bCjm1mvGkSSpD6oke4baWwZftqjyjv4u-1sBDtOYsJY'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
   - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
 subfeature_v2:
   - id: ad7101f7-ae92-401b-a25a-d3060d42989d
+    internal-label: Aggregate datasets
   - id: d1167c89-f64a-42ca-ac95-1d91b7790df2
+    internal-label: Summary datasets
   - id: ee1bf083-e090-4def-936b-c111d29f42d0
+    internal-label: Ingest data
   - id: a4dc3e7d-bd07-4ac8-8e49-ff2e8fecf1e7
+    internal-label: Event datasets
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-autotag-review: '2026-05-01T09:11:34.506Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 14%
-
+source-wordcount: '592'
+ht-degree: 17%
 ---
-
 # 摄取数据概述
 
-Mix Modeler可处理来自不同封闭花园的事件级数据、汇总或汇总营销工作数据。 以及来自任何其他来源（如离线广告、内部因素或外部因素）的汇总或汇总数据。
+{{mm-mca-rebranding}}
+
+Marketing Campaign Analytics可处理来自不同封闭花园的事件级数据、汇总或汇总营销工作数据。 以及来自任何其他来源（如离线广告、内部因素或外部因素）的汇总或汇总数据。
 
 客户可以将摄取到Experience Platform中的任何类型的数据用作数据集，此类数据基于将XDM ExperienceEvent或XDM摘要量度用作基类的架构。
 
@@ -38,11 +49,11 @@ Mix Modeler可处理来自不同封闭花园的事件级数据、汇总或汇总
 * 汇总或摘要来自封闭花园的数据（如Facebook、YouTube）、流量源或离线广告数据。
 * 包含对模型构建有用的内部或外部因素的非营销聚合或摘要数据。
 
-您可以使用Experience Platform支持的任何类型的机制，从其他来源摄取体验事件级别的汇总营销工作数据和数据。 例如Experience Platform SDK、API、源连接器以及流式摄取和批量摄取。 要了解有关在Experience Platform中引入数据以用于Adobe Mix Modeler的更多信息，请参阅[数据引入概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/home)。
+您可以使用Experience Platform支持的任何类型的机制，从其他来源摄取体验事件级别的汇总营销工作数据和数据。 例如Experience Platform SDK、API、源连接器以及流式摄取和批量摄取。 要了解有关在Experience Platform中引入数据以用于Adobe Marketing Campaign Analytics的更多信息，请参阅[数据引入概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/home)。
 
 ## 准则
 
-要将数据摄取到Experience Platform以与Mix Modeler一起使用，请遵循以下准则：
+要将数据摄取到Experience Platform以与Marketing Campaign Analytics一起使用，请遵循以下准则：
 
 * 添加到数据集的增量数据不应有任何重叠。
 * 来自单个源的所有数据都应具有相同的粒度。
@@ -52,7 +63,7 @@ Mix Modeler可处理来自不同封闭花园的事件级数据、汇总或汇总
 
 ## 示例
 
-在下面查找除了更标准的体验事件数据之外通常在Mix Modeler中使用的一些数据示例。
+在下面查找除了更标准的体验事件数据之外通常在Marketing Campaign Analytics中使用的一些数据示例。
 
 +++ 汇总营销工作数据
 
@@ -94,12 +105,12 @@ Mix Modeler可处理来自不同封闭花园的事件级数据、汇总或汇总
 
 +++
 
-要在Mix Modeler中处理数据，您需要在数据集中收集数据，并按照Experience Platform中的架构建模。 通过Mix Modeler界面，可以轻松访问Experience Platform架构和数据集UI。
+要在Marketing Campaign Analytics中处理数据，您需要在数据集中收集数据，并按照Experience Platform中的架构建模。 通过Marketing Campaign Analytics界面，可以轻松访问Experience Platform架构和数据集UI。
 
 
 ## 验证
 
-要验证您的数据在Mix Modeler中是否正确可用，您可以执行以下操作：
+要验证您的数据在Marketing Campaign Analytics中是否正确可用，您可以执行以下操作：
 
 * 在[概述](/help/overview.md)中使用可视化。
 * 下载并检查来自协调数据集中的[协调数据](/help/harmonize-data/overview.md)的数据。

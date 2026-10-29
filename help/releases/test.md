@@ -6,32 +6,39 @@ feature: Release Notes
 hide: true
 exl-id: 5f832a79-7a0c-43cd-87cf-a5ceceb79032
 autotag-review: '2026-05-01T09:04:46.084Z'
-TQID: 'https://experienceleague.adobe.com/BTd4-OINWubpSgFga7QE-ASje73fnySf1nIxTOivlVQ'
+TQID: 'https://experienceleague.adobe.com/SJJvWD0kj0TqoP-rc4RQq9fTsFw5X1GSbSWtp1I0aTo'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
-  - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
-    internal-label: Administration
   - id: ca6bcd6f-f5ca-4e5f-a5ae-7dce7177bde9
     internal-label: Release notes
+  - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
+    internal-label: Administration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 1%
 ---
 # 测试
 
+{{mm-mca-rebranding}}
+
 测试带有unicode字符的表
 
 | 标记 | 数据视图 | 所有者 | 其他筛选器 |
 |---|---|---|---|
-| 您可以![搜索](/help/assets/icons/Search.svg) *搜索标记*&#x200B;以限制标记列表。 <br/><br/>当您选择一个或多个标记时，列表会自动被限制为显示其他可能的剩余标记。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的数字&#x200B;**⃣**&#x200B;是指可用标记的数量。 <br/><br/> **[!UICONTROL *标记&#x200B;*]**&#x200B;中的数字指⃣用spefici标记标记的过滤器数。 | 您可以![搜索](/help/assets/icons/Search.svg) *搜索数据视图*&#x200B;以限制数据视图的列表。 <br/>您可以选择多个数据视图来筛选筛选器列表。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的数字&#x200B;**⃣**&#x200B;是指可用标记的数量。 <br/><br/> **[!UICONTROL *标记&#x200B;*]**&#x200B;中的数字指⃣用spefici标记标记的过滤器数。 | 您可以![搜索](/help/assets/icons/Search.svg) *搜索数据视图*&#x200B;以限制数据视图的列表。 <br/>您可以选择多个数据视图来筛选筛选器列表。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的数字&#x200B;**⃣**&#x200B;是指可用标记的数量。 <br/><br/> **[!UICONTROL *标记&#x200B;*]**&#x200B;中的数字指⃣用spefici标记标记的过滤器数。 | 您可以![搜索](/help/assets/icons/Search.svg) *搜索数据视图*&#x200B;以限制数据视图的列表。 <br/>您可以选择多个数据视图来筛选筛选器列表。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的数字&#x200B;**⃣**&#x200B;是指可用标记的数量。 <br/><br/> **[!UICONTROL *标记&#x200B;*]**&#x200B;中的数字指⃣用spefici标记标记的过滤器数。🅐 🅔 |
+| 您可以![搜索](/help/assets/icons/Search.svg) *搜索标记*&#x200B;以限制标记列表。 <br/><br/>当您选择一个或多个标记时，列表会自动被限制为显示其他可能的剩余标记。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的数字&#x200B;**⃣**&#x200B;是指可用标记的数量。 <br/><br/> **[!UICONTROL *标记&#x200B;*]**中的数字指⃣用spefici标记标记的过滤器数。 | 您可以![搜索](/help/assets/icons/Search.svg) *搜索数据视图*&#x200B;以限制数据视图的列表。 <br/>您可以选择多个数据视图来筛选筛选器列表。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的数字&#x200B;**⃣**&#x200B;是指可用标记的数量。 <br/><br/> **[!UICONTROL *标记&#x200B;*]**中的数字指⃣用spefici标记标记的过滤器数。 | 您可以![搜索](/help/assets/icons/Search.svg) *搜索数据视图*&#x200B;以限制数据视图的列表。 <br/>您可以选择多个数据视图来筛选筛选器列表。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的数字&#x200B;**⃣**&#x200B;是指可用标记的数量。 <br/><br/> **[!UICONTROL *标记&#x200B;*]**中的数字指⃣用spefici标记标记的过滤器数。 | 您可以![搜索](/help/assets/icons/Search.svg) *搜索数据视图*&#x200B;以限制数据视图的列表。 <br/>您可以选择多个数据视图来筛选筛选器列表。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的数字&#x200B;**⃣**&#x200B;是指可用标记的数量。 <br/><br/> **[!UICONTROL *标记&#x200B;*]**中的数字指⃣用spefici标记标记的过滤器数。🅐 🅔 |
 
 {style="table-layout:fixed"}
 
@@ -42,7 +49,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-本文记录了![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**&#x200B;中的归因面板。<br/>有关本文的![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**&#x200B;版本，请参阅[归因面板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/attribution)。
+本文记录了![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**&#x200B;中的归因面板。<br/>有关本文的![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**&#x200B;版本，请参阅[归因面板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/attribution)。
 
 >[!ENDSHADEBOX]
 

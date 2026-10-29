@@ -1,33 +1,45 @@
 ---
 title: 计划概述
-description: 了解如何在Mix Modeler中查看、选择和操作计划。
+description: 了解如何在Marketing Campaign Analytics中查看、选择和操作计划。
 feature: Plans
 exl-id: 45a8dc30-3259-493d-8ea5-1899903733a6
-TQID: https://experienceleague.adobe.com/0cBg65pu0-gkk1AlWOvQHxn5RUaIRkOs1Yz7FPppcsk
 autotag-review: '2026-05-01T09:05:53.776Z'
+TQID: 'https://experienceleague.adobe.com/OZjW5A4DP1raHwQgA5RSrbyFAwEp5gKPrzezj59nnFA'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
 subfeature_v2:
   - id: d7b067e6-4f39-41e9-a081-7650346a84cd
+    internal-label: Build plans
   - id: b2520ae7-8f6c-4952-935e-aacc2c10256f
+    internal-label: Compare plans
   - id: e6c284e0-b6e6-4f82-bf96-e96bb5157b90
+    internal-label: Plan insights
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Insights
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 679
+source-wordcount: '683'
 ht-degree: 0%
-
 ---
-
 # 计划概述
 
-Mix Modeler中的计划允许您按业务部门和渠道分配预算。 计划功能与根据您的统一数据经过培训的模型的结果相集成。
+{{mm-mca-rebranding}}
+
+Marketing Campaign Analytics中的计划允许您按业务部门和渠道分配预算。 计划功能与根据您的统一数据经过培训的模型的结果相集成。
 
 计划概述一家企业计划在给定时间范围内在营销相关项目上可自由支配的投资（例如预算）。 这些投资服务于常见的KPI（例如订单、收入）。 计划可包括来自付费广告、赞助网络内容和活动等渠道的费用。
 
@@ -48,12 +60,12 @@ Mix Modeler中的计划允许您按业务部门和渠道分配预算。 计划�
 
 ## 构建计划
 
-要构建计划，请使用Mix Modeler计划创建向导。 有关更多详细信息，请参阅[生成计划](build.md)。
+要构建计划，请使用Marketing Campaign Analytics计划创建向导。 有关更多详细信息，请参阅[生成计划](build.md)。
 
 
 ## 管理计划
 
-要查看当前计划的表格，请在Mix Modeler界面中执行以下操作：
+要查看当前计划的表格，请在Marketing Campaign Analytics界面中执行以下操作：
 
 1. 从左边栏中选择![](/help/assets/icons2/FileChart.svg) **[!UICONTROL Plans]**。
 
@@ -100,15 +112,15 @@ Mix Modeler中的计划允许您按业务部门和渠道分配预算。 计划�
 - 为计划选择![更多](/help/assets/icons/More.svg)。 从上下文菜单中选择&#x200B;**[!UICONTROL Duplicate]**。
 - 或者，在表![SelectBox](/help/assets/icons/SelectBox.svg)中选择一个计划，然后从蓝色操作栏中选择![复制](/help/assets/icons/Copy.svg) **[!UICONTROL Duplicate]**。
 
-已创建一个新计划，其名称由原始计划的名称附加上&#x200B;**[!UICONTROL (Copy)] (_n_)**&#x200B;组成。 系统会自动将您重定向到[计划创建](build.md)，以便为复制的计划提供更新的详细信息。
+已创建一个新计划，其名称由原始计划的名称附加上&#x200B;**[!UICONTROL (Copy)](_n_)**&#x200B;组成。 系统会自动将您重定向到[计划创建](build.md)，以便为复制的计划提供更新的详细信息。
 
 - 原始计划中的详细信息（如描述、预算等）将复制过来。
 - 原始计划中的预算约束将复制到新创建的计划中。
 - 您可以选择另一个模型作为复制计划的基础。
-   - 对于已复制计划中存在，但在新选择的模型中不存在的接触点或渠道，将从计划中移除这些接触点或渠道的任何约束。
-   - 对于复制计划中不存在但在新选择的模型中存在的接触点或渠道，约束将设置为：
-      - 最小值为`0`，
-      - 与计划外部测试版范围预算一致的最大值。
+  - 对于已复制计划中存在，但在新选择的模型中不存在的接触点或渠道，将从计划中移除这些接触点或渠道的任何约束。
+  - 对于复制计划中不存在但在新选择的模型中存在的接触点或渠道，约束将设置为：
+    - 最小值为`0`，
+    - 与计划外部测试版范围预算一致的最大值。
 
 
 
@@ -131,6 +143,6 @@ Mix Modeler中的计划允许您按业务部门和渠道分配预算。 计划�
 
 1. 选择多个计划。
 1. 从蓝色操作栏中，选择![删除](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**&#x200B;以删除计划。
-1. 在&#x200B;**[!UICONTROL Delete *x *计划]**&#x200B;确认对话框中选择&#x200B;**[!UICONTROL Delete]**&#x200B;以删除计划。 选择要取消的&#x200B;**[!UICONTROL Cancel]**。
+1. 在&#x200B;**[!UICONTROL Delete *x *计划]**确认对话框中选择&#x200B;**[!UICONTROL Delete]**以删除计划。 选择要取消的&#x200B;**[!UICONTROL Cancel]**。
 
 

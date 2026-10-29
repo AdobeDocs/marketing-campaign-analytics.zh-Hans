@@ -1,28 +1,34 @@
 ---
 title: 转化
-description: 了解如何创建转化，以便在Mix Modeler中用作协调数据的一部分。
+description: 了解如何创建转化，以便在Marketing Campaign Analytics中用作协调数据的一部分。
 feature: Harmonized Data, Conversions
 exl-id: a8559426-452a-43e8-9a60-0c0bc97d863c
-TQID: https://experienceleague.adobe.com/rjFYd9XMTc5z4frFlq41PJqh9Zim-qoHSToyZenTPXE
+autotag-review: '2026-05-01T09:15:50.061Z'
+TQID: 'https://experienceleague.adobe.com/5m8Z9cc9d42019sNXkstXDn6cOo-2yzzQWCw0VG1YrY'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
 subfeature_v2:
   - id: bc2f5225-03d4-4bc8-89ec-99d78c30e6dd
+    internal-label: Conversions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-autotag-review: '2026-05-01T09:15:50.061Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 424
-ht-degree: 10%
-
+source-wordcount: '454'
+ht-degree: 9%
 ---
-
 # 转化 {#conversions}
 
+{{mm-mca-rebranding}}
+
+{{mm-mca-rebranding}}
 
 >[!CONTEXTUALHELP]
 >id="harmonizeddata_conversions_create"
@@ -36,7 +42,7 @@ ht-degree: 10%
 
 ## 管理转化
 
-要在Mix Modeler界面中查看可用转化表格，请执行以下操作：
+要在Marketing Campaign Analytics界面中查看可用转化表格，请执行以下操作：
 
 1. 从左边栏中选择![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]**。
 
@@ -48,15 +54,15 @@ ht-degree: 10%
 | --- | ---|
 | 名称 | 转换的名称。 |
 | 收入 | 用于计算转化收入的统一数据指标。 |
-| 转化量度 | 用作分析转化指标的协调数据指标。 |
-| 类别 | 转化的转化类别。 |
+| 转化量度 | 用作分析转化指标的协调数据指标。 这表示主要的数字业务结果，例如：订单数、收入、订阅数等。 |
+| 类别 | 要应用的转化规则，其中转化维度用于对转化类型进行分类。 |
 | 创建时间 | 创建转化的日期和时间。 |
 | 上次修改时间 | 上次修改转换的日期和时间。 |
 
 
 ## 添加转化
 
-要添加转换，请在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Conversion]**&#x200B;界面中：
+要添加转换，请在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Conversion]**&#x200B;界面中：
 
 1. 选择![添加](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add a conversion]**。
 
@@ -66,11 +72,11 @@ ht-degree: 10%
 
    1. 定义&#x200B;**[!UICONTROL Conversion category]**。
 
-      1. 从&#x200B;**[!UICONTROL *选择协调……*]**&#x200B;中选择一个值，例如`Conversion types`。
+      1. 从&#x200B;**[!UICONTROL *选择协调……*]**中选择一个值，例如`Conversion types`。
 
       1. 选择运算符![V形](/help/assets/icons/ChevronDown.svg)的值，例如&#x200B;**[!UICONTROL is]**。
 
-      1. 从&#x200B;**[!UICONTROL *中选择值&#x200B;*]**&#x200B;或输入值，例如&#x200B;**[!UICONTROL Store]**。
+      1. 从&#x200B;**[!UICONTROL *中选择值&#x200B;*]**或输入值，例如&#x200B;**[!UICONTROL Store]**。
 
    1. 从&#x200B;**[!UICONTROL Conversion metric for analysis]**&#x200B;中选择协调字段，例如&#x200B;**[!UICONTROL Orders]**。
 
