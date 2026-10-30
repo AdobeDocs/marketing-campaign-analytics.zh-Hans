@@ -1,34 +1,51 @@
 ---
 title: 数据集规则
-description: 了解如何在Mix Modeler中定义要用作协调数据一部分的数据集规则。
+description: 了解如何在Marketing Campaign Analytics中定义要用作协调数据一部分的数据集规则。
 feature: Harmonized Data, Dataset Rules
 exl-id: 57d7940a-2900-4814-a30d-bb02bff7615d
-TQID: https://experienceleague.adobe.com/AHQ73zgE97hHUbZ-lW9-l0c-MKHjA50Qcj9w02MjyGM
+autotag-review: '2026-05-01T09:12:48.985Z'
+TQID: 'https://experienceleague.adobe.com/y9TAqZY49fiIesDpEQ-NO58bR2SU3hYvqk5lAlgrslA'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
+  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
 subfeature_v2:
   - id: ba4fd72c-282e-4fb6-abc1-08e6fb87b2ad
+    internal-label: Dataset rules
   - id: d4b8ba18-64c1-4413-be54-74405ec7f558
+    internal-label: Dataset mapping
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-autotag-review: '2026-05-01T09:12:48.985Z'
-source-git-commit: 0e1bd1a2e96e96b98be502b9c8413d63816efa3d
+    internal-label: Insights
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 2161
+source-wordcount: '2169'
 ht-degree: 3%
-
 ---
-
 # 数据集规则
 
-数据集规则可帮助您将协调的字段与您在Mix Modeler中摄取的数据中的字段进行映射。
+{{mm-mca-rebranding}}
+
+数据集规则可帮助您将协调的字段与您在Marketing Campaign Analytics中摄取的数据中的字段进行映射。
 
 * 对于在Adobe Experience Platform中摄取的聚合数据，可将一个或多个可用数据集字段映射到相应的协调字段。
 * 对于事件数据，您可以直接或使用条件将一个或多个协调的字段单独映射到数据集中的字段。
@@ -37,7 +54,7 @@ ht-degree: 3%
 
 ## 管理数据集规则
 
-要查看可用数据集规则的表，请在Mix Modeler界面中执行以下操作：
+要查看可用数据集规则的表，请在Marketing Campaign Analytics界面中执行以下操作：
 
 1. 从左边栏中选择![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]**。
 
@@ -69,7 +86,7 @@ ht-degree: 3%
 
 ### 创建数据集规则
 
-要创建数据集规则，请在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;界面中，在&#x200B;**[!UICONTROL Dataset rules configuration]**&#x200B;向导中选择&#x200B;**[!UICONTROL Create a dataset rule]**。
+要创建数据集规则，请在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;界面中，在&#x200B;**[!UICONTROL Dataset rules configuration]**&#x200B;向导中选择&#x200B;**[!UICONTROL Create a dataset rule]**。
 
 在&#x200B;**[!UICONTROL Create]**&#x200B;屏幕中，
 
@@ -83,7 +100,7 @@ ht-degree: 3%
 
    对于营销分析人员而言，来自发布者的报表数据非常重要，因为与发布者合作通常意味着大量支出，并且报表数据的更改可能会导致洞察信息和投资计划出现很大差异。 此外，营销分析师需要准确的数据才能获得正确的洞察力，并提出令人信服的提案以获得利益相关者的信心。 但是，这些发布者（如Google和Facebook）在协调数据时通常会重新声明或删除报表数据。 大多数更改的时间范围在报告媒体性能后的7天内。 30天内可能会对数据做其他更改。 通常，在30天后，书籍会被视为已结账且数据已完整。
 
-   Mix Modeler支持数据重述。 确保用于报表、建模和规划的数据准确无误。 并且这些数据能够支持品牌和营销分析师的期望和需求。
+   Marketing Campaign Analytics支持数据重述。 确保用于报表、建模和规划的数据准确无误。 并且这些数据能够支持品牌和营销分析师的期望和需求。
 
    您可以在Experience Platform数据集中将重述的摘要数据行作为增量行发送，协调服务将使用该重述数据更新协调的数据集。 同样，您也可以删除需要反映在协调服务中的汇总数据行。
 
@@ -135,7 +152,7 @@ ht-degree: 3%
 
 #### 摘要数据集
 
-当您从摘要数据集中映射标准协调字段时，Mix Modeler会尝试推导相应的Experience Platform数据集字段。 成功后：
+当您从摘要数据集中映射标准协调字段时，Marketing Campaign Analytics会尝试推导相应的Experience Platform数据集字段。 成功后：
 
 * 如果字段为维度类型，则选择&#x200B;**[!UICONTROL Map into]**&#x200B;作为&#x200B;**[!UICONTROL Mapping type]**。
 * 如果字段为量度类型，则选择&#x200B;**[!UICONTROL Sum]**&#x200B;作为&#x200B;**[!UICONTROL Mapping type]**。
@@ -212,7 +229,7 @@ ht-degree: 3%
 
 ### 编辑数据集规则
 
-要编辑数据集规则，请在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;界面中：
+要编辑数据集规则，请在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;界面中：
 
 1. 在&#x200B;**[!UICONTROL Dataset]**&#x200B;列中为要编辑的数据集规则选择![更多](/help/assets/icons/More.svg)。
 1. 从上下文菜单中，选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**&#x200B;以开始编辑数据集规则。 有关详细信息，请参阅[创建数据集规则](#create-a-dataset-rule)。
@@ -220,7 +237,7 @@ ht-degree: 3%
 
 ### 删除数据集规则
 
-要删除数据集规则，请在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;界面中：
+要删除数据集规则，请在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;界面中：
 
 1. 在&#x200B;**[!UICONTROL Dataset]**&#x200B;列中为要删除的数据集规则选择![更多](/help/assets/icons/More.svg)。
 1. 从上下文菜单中，选择![删除](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**&#x200B;以删除数据集规则。 系统会提示您进行确认。 选择&#x200B;**[!UICONTROL Delete]**&#x200B;以永久删除选定的数据集规则。

@@ -1,16 +1,20 @@
 ---
 title: 模型分析
-description: 了解如何获取有关模型的详细信息，如Mix Modeler中的历史概述、模型见解和模型质量。
+description: 了解如何获取有关模型的详细信息，如Marketing Campaign Analytics中的历史概述、模型见解和模型质量。
 feature: Models
 exl-id: d99852f9-ba0d-4a2e-b5f3-ca0efe6002fd
-TQID: https://experienceleague.adobe.com/Ml1WZzjI8bruwu0xV5r6Y9DY34aZad-nMhUMoIObIow
 autotag-review: '2026-05-01T08:59:31.397Z'
+TQID: 'https://experienceleague.adobe.com/zoUwqJXQ0z2ttUwvF1cn5ukSvn8-Cxhpv5lXlWENkQo'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
     internal-label: Models
+  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
+    internal-label: Marketing touch attribution
 subfeature_v2:
   - id: a9505d76-24a1-4ffe-bd01-6ac32d5af453
     internal-label: Model insights
@@ -20,16 +24,20 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
 topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 4c3c5548ced77cf84daf5cd8eb6708bfbc3dbb48
+source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
 workflow-type: tm+mt
-source-wordcount: '2951'
+source-wordcount: '3105'
 ht-degree: 11%
 ---
 # 模型洞察
+
+{{mm-mca-rebranding}}
 
 模型分析中的每个可视化图表都旨在帮助您：
 
@@ -39,12 +47,11 @@ ht-degree: 11%
 
 然后，这些见解可帮助您支持资源优先顺序和分配。
 
-要查看模型分析，请在[!DNL Mix Modeler]的![模型](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**&#x200B;界面中：
+要查看模型分析，请在[!DNL Marketing Campaign Analytics]的![模型](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**&#x200B;界面中：
 
 1. 从&#x200B;**[!UICONTROL Models]**&#x200B;表中，选择&#x200B;**[!UICONTROL Last run status]**&#x200B;为![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Success]**&#x200B;的模型的名称。
 
 1. 从上下文菜单中选择&#x200B;**[!UICONTROL Model Insights]**。
-
 
 
 可以使用以下选项卡：
@@ -55,6 +62,8 @@ ht-degree: 11%
 * [归因](#attribution)（仅适用于启用MTA的模型）
 * [诊断](#diagnostics)
 * [历史概述](#historical-overview)。
+
+如果为模型启用了[完全funnel建模](./overview.md#full-funnel-modeling)，请从要查看其模型分析的&#x200B;**[!UICONTROL Funnel stage]**&#x200B;下拉菜单中选择funnel阶段(**[!UICONTROL Upper funnel]**、**[!UICONTROL Lower funnel]**、**[!UICONTROL Full funnel]**)。
 
 您可以更改每个选项卡上的可视化图表所基于的日期段。 输入日期期间或选择![日历](/help/assets/icons/Calendar.svg)以选择日期期间。
 
@@ -126,6 +135,25 @@ ht-degree: 11%
 
 * 从&#x200B;**[!UICONTROL Channel]**&#x200B;下拉菜单中选择一个渠道以更新特定渠道的可视化图表。
 
+## funnel流程
+
+{{release-limited-testing-section}}
+
+如果为模型启用了[完全funnel建模](./overview.md#full-funnel-modeling)，并且您从Funnel Stage下拉菜单中选择了“完全funnel”，则可使用Funnel流量可视化图表。
+
+>[!BEGINTABS]
+
+>[!TAB Funnel流程]
+
+![Funnel流程](/help/assets/model-funnel-flow.png)
+
+>[!TAB 将鼠标悬停在funnel流上]
+
+![计划渠道所有协同效应](/help/assets/model-funnel-flow-hover.png)
+
+>[!ENDTABS]
+
+将鼠标悬停在任意流上会看到一个弹出窗口，其中包含特定funnel流的更多详细信息。
 
 ### 接触点细分
 
@@ -163,16 +191,21 @@ ht-degree: 11%
 
 这一新美元框架提供了相对协同强度的现实衡量标准，因为该框架考虑到培训数据中的实际支出条件，从而能够作出更明智的优化决策。
 
+如果为该模型启用了[完整funnel建模](./overview.md#full-funnel-modeling)，您将看到有关funnel上部渠道协同增效和funnel下部渠道协同增效的可视化图表。
 
 >[!BEGINTABS]
 
->[!TAB 显示更少的协同效应]
+>[!TAB 显示更少的渠道协同效应]
 
-![计划渠道协同效应](/help/assets/model-channel-synergies-less.png)
+![计划渠道减少协同效应](/help/assets/model-channel-synergies-less.png)
 
->[!TAB 显示所有协同效应]
+>[!TAB 显示所有渠道协同效应]
 
-![计划渠道协同效应](/help/assets/model-channel-synergies-all.png)
+![计划渠道所有协同效应](/help/assets/model-channel-synergies-all.png)
+
+>[!TAB Funnel协同效应]
+
+![计划渠道funnel协同效应](/help/assets/model-channel-synergies-funnel.png)
 
 >[!ENDTABS]
 
@@ -210,6 +243,7 @@ ht-degree: 11%
 
 >[!ENDTABS]
 
+* 如果为模型启用了[完整funnel建模](./overview.md#full-funnel-modeling)，请从Funnel Stage下拉菜单中选择上层funnel或下层funnel。
 * 要显示&#x200B;**[!UICONTROL All channels]**&#x200B;的Adstock可视化图表或单个渠道（例如，**[!UICONTROL Paid Social Facebook]**）的Adstock可视化图表，请从&#x200B;**[!UICONTROL Channel]**&#x200B;下拉菜单中选择。
 
 
@@ -258,7 +292,7 @@ ht-degree: 11%
 
 支持以下归因模型：
 
-* 基于[!DNL Mix Modeler]中选定的模型：
+* 基于[!DNL Marketing Campaign Analytics]中选定的模型：
   * 算法 — 影响输出
   * 算法 — 增量
 * 基于规则：
@@ -268,13 +302,13 @@ ht-degree: 11%
   * 线性
   * Ushape
 
-有关[!DNL Mix Modeler]中的多点触控归因功能的介绍，请参阅[多点触控归因](../get-started/about.md#multi-touch-attribution)。
+有关[!DNL Marketing Campaign Analytics]中的多点触控归因功能的介绍，请参阅[多点触控归因](../get-started/about.md#multi-touch-attribution)。
 
 从&#x200B;**[!UICONTROL Attribution Model]**&#x200B;下拉菜单中选择一个或多个归因模型。 选定的归因模型适用于归因选项卡中的所有可视化图表。
 
 ![归因](/help/assets/model-insights-attribution.png)
 
-Mix Modeler多点接触归因粒度事件分数与总体[!DNL Mix Modeler]分数和ROI一致。 这些得分也可作为Experience Platform中的数据集使用。
+Marketing Campaign Analytics多点接触归因粒度事件分数与总体[!DNL Marketing Campaign Analytics]分数和ROI一致。 这些得分也可作为Experience Platform中的数据集使用。
 
 归因选项卡包含以下可视化图表：
 
@@ -420,8 +454,8 @@ Mix Modeler多点接触归因粒度事件分数与总体[!DNL Mix Modeler]分数
   * **[!UICONTROL Training R<sup>2</sup>]**：指示模型预测解释的实际值中差异的比例，从0到1。
   * **[!UICONTROL Training sMAPE]** （对称平均绝对百分比错误）：测量训练数据的平均百分比错误。 值越低表示精度越高。
   * **[!UICONTROL Training RMSE]** （均方根错误）：测量训练数据的平均百分比错误。 惩罚比MAPE更大的错误。 RMSE越低表明预测准确度越高，但对离群值比较敏感。
-  * **[!UICONTROL Out-of-sample sMAPE]**：评估不可见数据的百分比错误，平衡预测过多和预测不足。 有助于评估泛化性。 目前，Mix Modeler使用上一季度培训数据作为维持集来评估百分比错误。
-  * **[!UICONTROL Out-of-sample RMSE]**：评估不可见数据的百分比错误，平衡预测过多和预测不足。 帮助评估泛化性。 当前，[!DNL Mix Modeler]使用上一季度的训练数据作为维持集来评估百分比错误。 RMSE比MAPE更严重地惩罚错误。
+  * **[!UICONTROL Out-of-sample sMAPE]**：评估不可见数据的百分比错误，平衡预测过多和预测不足。 有助于评估泛化性。 目前，Marketing Campaign Analytics使用上一季度培训数据作为维持集来评估百分比错误。
+  * **[!UICONTROL Out-of-sample RMSE]**：评估不可见数据的百分比错误，平衡预测过多和预测不足。 帮助评估泛化性。 当前，[!DNL Marketing Campaign Analytics]使用上一季度的训练数据作为维持集来评估百分比错误。 RMSE比MAPE更严重地惩罚错误。
 
 
 * **[!UICONTROL Touchpoint effectiveness]**&#x200B;表，表示归因人工智能算法模型的结果。
@@ -441,7 +475,7 @@ Mix Modeler多点接触归因粒度事件分数与总体[!DNL Mix Modeler]分数
 
 >[!AVAILABILITY]
 >
->此部分中描述的功能处于版本的有限测试阶段，可能尚未在您的环境中可用。 当功能正式可用时，将删除此注释。 有关[!DNL Mix Modeler]发布过程的信息，请参阅[Mix Modeler功能发布](/help/releases/latest.md)。
+>此部分中描述的功能处于版本的有限测试阶段，可能尚未在您的环境中可用。 当功能正式可用时，将删除此注释。 有关[!DNL Marketing Campaign Analytics]发布过程的信息，请参阅[Marketing Campaign Analytics功能发布](/help/releases/latest.md)。
 >
 
 如果检测到模型漂移，您会在顶部看到&#x200B;**[!UICONTROL Model drift detected]**&#x200B;通知。

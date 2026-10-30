@@ -1,13 +1,13 @@
 ---
 title: 审核日志
-description: 了解如何从Mix Modeler访问审核日志。
+description: 了解如何从Marketing Campaign Analytics访问审核日志。
 feature: Administration
 exl-id: aa65aac5-bea4-43ff-b0d0-9e8a6a97d3ca
 autotag-review: '2026-05-01T09:16:13.122Z'
-TQID: 'https://experienceleague.adobe.com/SVw4XFGpjHu5B5awcf9L-LH-IMEMrMmReACYo3-fSb0'
+TQID: 'https://experienceleague.adobe.com/ZH89ZDOEMDwbvU5QnPtpkDft0U121-JDrhgEBPDuV3Q'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: f6633d1c-3d2d-4f48-95d4-4bbc9913db52
     internal-label: Data governance
@@ -32,58 +32,60 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '519'
 ht-degree: 6%
 ---
 # 审核日志
 
-为了提高系统中执行活动的透明度和可见性，Mix Modeler审核日志会捕获Experience Platform工作流中的用户活动，以了解对Mix Modeler类别进行的任何用户驱动更改。 这些日志形成审核记录，可以帮助解决问题，并帮助您的企业有效地遵守公司数据管理政策和法规要求。
+{{mm-mca-rebranding}}
+
+为了提高系统中执行活动的透明度和可见性，Marketing Campaign Analytics审核日志会捕获Experience Platform工作流中的用户活动，以了解对Marketing Campaign Analytics类别进行的任何用户驱动更改。 这些日志形成审核记录，可以帮助解决问题，并帮助您的企业有效地遵守公司数据管理政策和法规要求。
 
 <!-- 
 DO WE HAVE TO ADD THIS
-If you are subject to the Health Insurance Portability and Accountability Act (HIPAA) and create, receive, maintain, or transmit permitted sensitive personal data through Mix Modeler, you are responsible for executing a BAA with Adobe and licensing Healthcare Shield.
+If you are subject to the Health Insurance Portability and Accountability Act (HIPAA) and create, receive, maintain, or transmit permitted sensitive personal data through Marketing Campaign Analytics, you are responsible for executing a BAA with Adobe and licensing Healthcare Shield.
 -->
 
-审核日志会告知执行了什么操作以及何时执行。 日志中记录的每个操作都包含元数据，这些元数据指示操作类型、日期和时间、执行操作的用户的电子邮件ID以及与操作类型相关的其他属性。 它跟踪用户在Mix Modeler中执行的创建、更新和删除操作。
+审核日志会告知执行了什么操作以及何时执行。 日志中记录的每个操作都包含元数据，这些元数据指示操作类型、日期和时间、执行操作的用户的电子邮件ID以及与操作类型相关的其他属性。 它跟踪用户在Marketing Campaign Analytics中执行的创建、更新和删除操作。
 
-要在Mix Modeler界面中检查审核日志，请执行以下操作：
+要在Marketing Campaign Analytics界面中检查审核日志，请执行以下操作：
 
 1. 从&#x200B;**[!UICONTROL PRIVACY]**&#x200B;中选择![任务列表](/help/assets/icons/TaskList.svg) **[!UICONTROL Audits]**。
 
-1. 在&#x200B;**[!UICONTROL Audits]**&#x200B;中，您可以找到&#x200B;**[!UICONTROL Activity log]**。 活动日志显示以下Mix Modeler类别、操作和状态的条目。
+1. 在&#x200B;**[!UICONTROL Audits]**&#x200B;中，您可以找到&#x200B;**[!UICONTROL Activity log]**。 活动日志显示以下Marketing Campaign Analytics类别、操作和状态的条目。
 
    | 类别 | 操作 | 状态 |
    |---|---|---|
-   | Mix Modeler数据集规则 | 创建 | 允许或拒绝 |
-   | Mix Modeler数据集规则 | 更新 | 允许或拒绝 |
-   | Mix Modeler数据集规则 | Delete | 允许或拒绝 |
-   | Mix Modeler字段 | 创建 | 允许或拒绝 |
-   | Mix Modeler字段 | 更新 | 允许或拒绝 |
-   | Mix Modeler字段 | Delete | 允许或拒绝 |
-   | Mix Modeler营销接触点 | 创建 | 允许或拒绝 |
-   | Mix Modeler营销接触点 | 更新 | 允许或拒绝 |
-   | Mix Modeler营销接触点 | Delete | 允许或拒绝 |
-   | Mix Modeler转换 | 创建 | 允许或拒绝 |
-   | Mix Modeler转换 | 更新 | 允许或拒绝 |
-   | Mix Modeler转换 | Delete | 允许或拒绝 |
-   | Mix Modeler模型 | 创建 | 允许或拒绝 |
-   | Mix Modeler模型 | 更新 | 允许或拒绝 |
-   | Mix Modeler模型 | Delete | 允许或拒绝 |
-   | Mix Modeler模型 | Rescore | 允许或拒绝 |
-   | Mix Modeler模型 | 克隆 | 允许或拒绝 |
-   | Mix Modeler模型 | 培训/重新培训 | 允许或拒绝 |
-   | Mix Modeler模型 | 下载/保存元数据 | 允许或拒绝 |
-   | Mix Modeler计划 | 创建 | 允许或拒绝 |
-   | Mix Modeler计划 | 更新 | 允许或拒绝 |
-   | Mix Modeler计划 | 更改关联的模型 | 允许或拒绝 |
-   | Mix Modeler数据协调 | 触发器同步 | 允许或拒绝 |
+   | Marketing Campaign Analytics数据集规则 | 创建 | 允许或拒绝 |
+   | Marketing Campaign Analytics数据集规则 | 更新 | 允许或拒绝 |
+   | Marketing Campaign Analytics数据集规则 | Delete | 允许或拒绝 |
+   | Marketing Campaign Analytics字段 | 创建 | 允许或拒绝 |
+   | Marketing Campaign Analytics字段 | 更新 | 允许或拒绝 |
+   | Marketing Campaign Analytics字段 | Delete | 允许或拒绝 |
+   | Marketing Campaign Analytics营销接触点 | 创建 | 允许或拒绝 |
+   | Marketing Campaign Analytics营销接触点 | 更新 | 允许或拒绝 |
+   | Marketing Campaign Analytics营销接触点 | Delete | 允许或拒绝 |
+   | Marketing Campaign Analytics转换 | 创建 | 允许或拒绝 |
+   | Marketing Campaign Analytics转换 | 更新 | 允许或拒绝 |
+   | Marketing Campaign Analytics转换 | Delete | 允许或拒绝 |
+   | Marketing Campaign Analytics模型 | 创建 | 允许或拒绝 |
+   | Marketing Campaign Analytics模型 | 更新 | 允许或拒绝 |
+   | Marketing Campaign Analytics模型 | Delete | 允许或拒绝 |
+   | Marketing Campaign Analytics模型 | Rescore | 允许或拒绝 |
+   | Marketing Campaign Analytics模型 | 克隆 | 允许或拒绝 |
+   | Marketing Campaign Analytics模型 | 培训/重新培训 | 允许或拒绝 |
+   | Marketing Campaign Analytics模型 | 下载/保存元数据 | 允许或拒绝 |
+   | Marketing Campaign Analytics计划 | 创建 | 允许或拒绝 |
+   | Marketing Campaign Analytics计划 | 更新 | 允许或拒绝 |
+   | Marketing Campaign Analytics计划 | 更改关联的模型 | 允许或拒绝 |
+   | Marketing Campaign Analytics数据协调 | 触发器同步 | 允许或拒绝 |
 
 
 1. 在活动日志中选择一个条目，以打开面板了解更多详细信息。
 
-   ![Mix Modeler审核](/help/assets/mix-modeler-audit.png)
+   ![Marketing Campaign Analytics审核](/help/assets/mix-modeler-audit.png)
 
 1. 要筛选&#x200B;**[!UICONTROL Category]**、**[!UICONTROL Action]**、**[!UICONTROL Request ID]**、**[!UICONTROL User]**、**[!UICONTROL Status]**&#x200B;或&#x200B;**[!UICONTROL Date]**&#x200B;范围，请选择![筛选器](/help/assets/icons/Filter.svg)。
 
@@ -95,4 +97,4 @@ If you are subject to the Health Insurance Portability and Accountability Act (H
 
 为您的组织启用该功能后，系统会在活动发生时自动收集审核日志。 您无需手动启用审核日志收集。
 
-要查看和导出审核日志，您必须已被授予审核日志访问访问控制权限。 要了解如何管理Mix Modeler功能的各个权限，请参阅[访问控制文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)。
+要查看和导出审核日志，您必须已被授予审核日志访问访问控制权限。 要了解如何管理Marketing Campaign Analytics功能的各个权限，请参阅[访问控制文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)。

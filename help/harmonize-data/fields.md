@@ -1,28 +1,34 @@
 ---
 title: 协调的字段
-description: 了解如何在Mix Modeler中定义要用作协调数据一部分的字段。
+description: 了解如何在Marketing Campaign Analytics中定义要用作协调数据一部分的字段。
 feature: Harmonized Data, Harmonized Fields
 exl-id: f051279a-1ae9-49bd-a946-abfc34c90413
-TQID: https://experienceleague.adobe.com/NlB6aA4AO-0Tpbb9SibgUz0eVUgs8roO9Mju2M8tl7s
+autotag-review: '2026-05-01T09:13:17.577Z'
+TQID: 'https://experienceleague.adobe.com/ZmBwgBCVOPCVJ1pdniya3RvjWagTQuLSQoxluuDQLbc'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
 subfeature_v2:
   - id: d4b8ba18-64c1-4413-be54-74405ec7f558
+    internal-label: Dataset mapping
   - id: b4655f7e-1a6e-4fa3-a7c5-3c34d4786e49
+    internal-label: Harmonized fields
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-autotag-review: '2026-05-01T09:13:17.577Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 688
+source-wordcount: '694'
 ht-degree: 11%
-
 ---
-
 # 协调的字段
+
+{{mm-mca-rebranding}}
 
 协调的字段允许您为概念上相同的数据定义字段，这些数据来自不同的来源，每个来源都有自己对该数据的定义。 例如，可以根据数据源的不同定义和命名点击量度。 点击协调字段允许您根据点击数据的不同来源定义点击量度的通用术语。
 
@@ -30,7 +36,7 @@ ht-degree: 11%
 
 ## 全球一体化领域
 
-Mix Modeler中默认可用的全局协调字段包括：
+Marketing Campaign Analytics中默认可用的全局协调字段包括：
 
 
 | 字段名称 | 显示名称 | 类别 | 数据类型 | 注释 |
@@ -65,7 +71,7 @@ Mix Modeler中默认可用的全局协调字段包括：
 
 ## 管理协调的字段
 
-要在Mix Modeler界面中查看可用协调字段的表，请执行以下操作：
+要在Marketing Campaign Analytics界面中查看可用协调字段的表，请执行以下操作：
 
 1. 从左边栏中选择![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]**。
 
@@ -91,7 +97,7 @@ Mix Modeler中默认可用的全局协调字段包括：
 
 ### 添加协调字段
 
-要添加协调字段，请在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;界面中：
+要添加协调字段，请在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;界面中：
 
 1. 选择![添加](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add field]**。
 
@@ -117,7 +123,7 @@ Mix Modeler中默认可用的全局协调字段包括：
 
 您只能编辑之前创建的协调字段（所有者是客户）。 您无法编辑全局协调字段。
 
-要编辑协调的字段，请在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;界面中：
+要编辑协调的字段，请在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;界面中：
 
 1. 选择要编辑的协调字段。 例如：**[!UICONTROL Region]**。
 
@@ -131,7 +137,7 @@ Mix Modeler中默认可用的全局协调字段包括：
 
 您只能删除之前创建的协调字段（所有者即客户）。 您不能删除全球协调字段。
 
-要删除协调字段，请在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;界面中：
+要删除协调字段，请在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;界面中：
 
 1. 选择要删除的协调字段，例如&#x200B;**[!UICONTROL Region]**。
 

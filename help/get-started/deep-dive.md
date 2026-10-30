@@ -1,14 +1,19 @@
 ---
-title: Mix Modeler深入探讨
-description: 探索Adobe Mix Modeler背后的技术方法，包括多点接触归因、营销组合建模、转移学习和预算优化。
+title: Marketing Campaign Analytics深入探讨
+description: 探索Adobe Marketing Campaign Analytics背后的技术方法，包括多点接触归因、营销组合建模、转移学习和预算优化。
 feature: Administration
 hide: true
+TQID: 'https://experienceleague.adobe.com/vIeES6bmdXOt6GIEA5Mt--IbyJ5g64kf-gyb6oEK0Ro'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a234aebd-3855-4376-a64d-29b38411e0c5
     internal-label: Marketing mix modeling
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
   - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
     internal-label: Marketing touch attribution
   - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
@@ -24,23 +29,41 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2853'
 ht-degree: 0%
 ---
 
 # 深度挖掘
 
 
-Adobe Mix Modeler是一个统一的、由AI/ML支持的测量平台，它结合了多点接触归因(MTA)和营销组合建模(MMM)，以提供准确、可扩展且经得起未来考验的营销见解。 本文详细分析了Mix Modeler背后的方法论、设计选择和技术创新。 并且基于[此2025年峰会会话](https://business.adobe.com/cn/summit/2025/sessions/marketing-mix-modeling-at-adobe-learn-to-predict-s602.html){target="_blank"}，其中详细细分了Mix Modeler背后的方法、设计选择和技术创新。
+Adobe Marketing Campaign Analytics是一个统一的、由AI/ML支持的测量平台，它结合了多点接触归因(MTA)和营销组合建模(MMM)，以提供准确、可扩展且经得起未来考验的营销见解。 本文详细分析了Marketing Campaign Analytics背后的方法论、设计选择和技术创新。 并且基于[此2025年峰会会话](https://business.adobe.com/cn/summit/2025/sessions/marketing-mix-modeling-at-adobe-learn-to-predict-s602.html){target="_blank"}，其中详细细分了Marketing Campaign Analytics背后的方法、设计选择和技术创新。
 
-随着营销复杂性的增长，传统的衡量方法已无法满足需求。 零散的数据、不断演变的隐私限制以及对速度和严格性的需求，使得有必要重新思考如何评估营销绩效。 Adobe的回应是Mix Modeler：一个使用机器学习来综合多个数据源和建模范例的集成系统，形成一个有凝聚力的策略。
+随着营销复杂性的增长，传统的衡量方法已无法满足需求。 零散的数据、不断演变的隐私限制以及对速度和严格性的需求，使得有必要重新思考如何评估营销绩效。 Adobe的回应是Marketing Campaign Analytics：一个使用机器学习来综合多个数据源和建模范例的集成系统，形成一个有凝聚力的策略。
 
 
 >[!TIP]
 >
->Mix Modeler的主要优势之一是面向营销人员提供了解决方案的辅助功能。 该应用程序通过无需数据科学背景的简单易用的界面，简化了数据科学的复杂性。 如果您有兴趣进行深入探讨，本文将探讨在开发Mix Modeler时所做的技术选择。 本文假定您熟悉（高级）数据科学概念。
+>Marketing Campaign Analytics的主要优势之一是面向营销人员提供了解决方案的辅助功能。 该应用程序通过无需数据科学背景的简单易用的界面，简化了数据科学的复杂性。 如果您有兴趣进行深入探讨，本文将探讨在开发Marketing Campaign Analytics时所做的技术选择。 本文假定您熟悉（高级）数据科学概念。
 
 本文更详细地说明了基本组件。 这些基本组件包括：
 
@@ -55,7 +78,7 @@ Adobe Mix Modeler是一个统一的、由AI/ML支持的测量平台，它结合�
 
 ### 概述
 
-支持Mix Modeler的多接触点归因(MTA)模型基于基于事件级数据训练的离散时间生存模型。 数据包括搜索、点击、产品查看、添加到购物车和结账。 通过监督学习，该模型估计客户旅程中每一步的条件转化概率。 该模型同时考虑了转化和非转化客户历程路径，以衡量不同营销接触点在一段时间内对客户行为的影响。 非转化路径与转化路径同样重要。 两种路径之间的对比度有助于了解特定类型的营销接触点是否有效地推动转化。 例如，如果一种类型的接触点在非转化路径上出现的可能性与在非转化路径上出现的可能性一样大，则该接触点对转化没有影响。 此行为与通常出现在转化路径而非非转化路径上的接触点相反。
+支持Marketing Campaign Analytics的多接触点归因(MTA)模型基于基于事件级数据训练的离散时间生存模型。 数据包括搜索、点击、产品查看、添加到购物车和结账。 通过监督学习，该模型估计客户旅程中每一步的条件转化概率。 该模型同时考虑了转化和非转化客户历程路径，以衡量不同营销接触点在一段时间内对客户行为的影响。 非转化路径与转化路径同样重要。 两种路径之间的对比度有助于了解特定类型的营销接触点是否有效地推动转化。 例如，如果一种类型的接触点在非转化路径上出现的可能性与在非转化路径上出现的可能性一样大，则该接触点对转化没有影响。 此行为与通常出现在转化路径而非非转化路径上的接触点相反。
 
 ![事件级别数据](/help/assets/event-level-data.png)
 
@@ -106,7 +129,7 @@ Adobe Mix Modeler是一个统一的、由AI/ML支持的测量平台，它结合�
 
 ### 优点
 
-为Mix Modeler选择的多接触点归因方法具有几个主要优势。
+为Marketing Campaign Analytics选择的多接触点归因方法具有几个主要优势。
 
 * 会考虑转化路径和非转化路径，因此可确保更准确地估计真正的媒体影响。
 * 合并模拟关键实际客户行为的管理收益和递减收益，并避免在基于规则的模型中经常出现的过于简化的假设。
@@ -114,12 +137,12 @@ Adobe Mix Modeler是一个统一的、由AI/ML支持的测量平台，它结合�
 * 支持直观的接触点归因，这种归因允许与其他方法（如隐马尔可夫模型）相反的清晰解释。
 * 与其他分类算法相比，提供强大的性能和较高的预测准确性。
 
-Mix Modeler为多点接触归因产生的见解提供了[适合营销人员的界面](/help/models/insights.md#attribution)。
+Marketing Campaign Analytics为多点接触归因产生的见解提供了[适合营销人员的界面](/help/models/insights.md#attribution)。
 
 ![模型归因分析](/help/assets/model-insights-attribution.png)
 
 
-尽管多触点归因可提供所有这些好处，但Mix Modeler不完全依赖于事件级数据的转化见解。 营销组合建模是考虑汇总级别数据的另一个基本组成部分。
+尽管多触点归因可提供所有这些好处，但Marketing Campaign Analytics不完全依赖于事件级数据的转化见解。 营销组合建模是考虑汇总级别数据的另一个基本组成部分。
 
 ## 营销组合建模(MMM)
 
@@ -177,7 +200,7 @@ Mix Modeler为多点接触归因产生的见解提供了[适合营销人员的�
 * 时变影响，相同水平的营销投资在不同时间会因外部因素而带来不同的回报。
 * 在预期市场条件或基准波动有助于随时间提供预算分配信息的情况下，不同时间的预算建议。
 
-Mix Modeler为营销组合建模产生的各种见解提供了[营销人员友好的界面](/help/models/insights.md#attribution)。 例如，因子贡献划分可显示可归因于模型中包含的各种因子的基本转化比例。
+Marketing Campaign Analytics为营销组合建模产生的各种见解提供了[营销人员友好的界面](/help/models/insights.md#attribution)。 例如，因子贡献划分可显示可归因于模型中包含的各种因子的基本转化比例。
 
 
 ![因子贡献细分](/help/assets/factors-example.png)
@@ -212,7 +235,7 @@ Mix Modeler为营销组合建模产生的各种见解提供了[营销人员友�
 
 ## 转移学习
 
-与多接触点归因和营销混合建模相比，实验是解决营销度量问题的又一重要支柱。 即使试验没有在Mix Modeler的框架内实施，但您可以使用试验（如在某些市场关闭营销）来了解营销对销售额的因果影响。
+与多接触点归因和营销混合建模相比，实验是解决营销度量问题的又一重要支柱。 即使试验没有在Marketing Campaign Analytics的框架内实施，但您可以使用试验（如在某些市场关闭营销）来了解营销对销售额的因果影响。
 
 Adobe推荐并采用转移学习来混合来自多接触点归因、营销组合建模、试验和其他先前知识来源的洞察。  这种混合可以描述为分层方法。 每一层都有间隙，以说明在生成内聚模型方面的局限性。 但是，如果以正确的方式栈叠图层，则可以补偿组合模型中的间隙。
 当您结合使用多点接触归因、营销组合建模、试验以及先验知识来源时，请应用这种类比。 以这样的方式混合这些元件，即组合在每个元件中承受的缺陷最少。
@@ -291,10 +314,10 @@ Adobe推荐并采用转移学习来混合来自多接触点归因、营销组合
 
 ## 摘要
 
-Adobe Mix Modeler不仅仅是一个衡量工具；Mix Modeler是一个决策支持引擎，其优势包括：
+Adobe Marketing Campaign Analytics不仅仅是一个衡量工具；Marketing Campaign Analytics是一个决策支持引擎，其优势包括：
 
 * 用严谨的统计方法模拟真实世界的复杂性的能力
 * 统一集成了多种数据和建模模式
 * 适应数据弃用趋势的经得起未来考验的体系结构
 
-可解释性与性能的结合，使Mix Modeler成为Adobe数据驱动型营销转型的核心。 Mix Modeler使营销团队能够做出更快、更智能、更一致的投资决策。
+可解释性与性能的结合，使Marketing Campaign Analytics成为Adobe数据驱动型营销转型的核心。 Marketing Campaign Analytics使营销团队能够做出更快、更智能、更一致的投资决策。

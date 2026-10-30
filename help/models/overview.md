@@ -1,38 +1,55 @@
 ---
 title: 模型概述
-description: 了解如何在Mix Modeler中构建、训练、评分和管理机器学习模型，以衡量和预测营销结果。
+description: 了解如何在Marketing Campaign Analytics中构建、训练、评分和管理机器学习模型，以衡量和预测营销结果。
 feature: Models
 exl-id: c43d9bc9-4429-45c2-9247-bd24510a24be
-TQID: https://experienceleague.adobe.com/2EmrUfSObFMDb0rNRG1OWqU8c2P9Dp1nf1y8-SpEY3k
 autotag-review: '2026-05-01T08:59:10.903Z'
+TQID: 'https://experienceleague.adobe.com/T37YTKQlT1mUIfGkJwQkLLGkP0WfTs6jUbZpskPUHgo'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a234aebd-3855-4376-a64d-29b38411e0c5
+    internal-label: Marketing mix modeling
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
+    internal-label: Marketing touch attribution
 subfeature_v2:
   - id: a9505d76-24a1-4ffe-bd01-6ac32d5af453
+    internal-label: Model insights
   - id: c89e26b6-808d-4500-8b01-450a63466999
+    internal-label: Build model
   - id: cb40363e-1205-4921-971c-9ee6bdb18329
+    internal-label: Scoring data
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Machine learning
+source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
 workflow-type: tm+mt
-source-wordcount: 1082
+source-wordcount: '1276'
 ht-degree: 0%
-
 ---
-
 # 模型概述
 
-Mix Modeler中的模型功能允许您配置、训练特定于业务目标的模型并对模型进行评分。 训练和评分支持在多触点归因和营销组合建模之间进行AI驱动的转移学习。
+{{mm-mca-rebranding}}
+
+Marketing Campaign Analytics中的模型功能允许您配置、训练特定于业务目标的模型并对模型进行评分。 训练和评分支持在多触点归因和营销组合建模之间进行AI驱动的转移学习。
 
 这些模型基于您在应用程序工作流程中创建的统一数据。
 
-Mix Modeler中的模型是一种机器学习模型，用于根据营销人员的投资来衡量和预测指定的结果。 营销接触点和摘要级别的数据可用作输入。 Mix Modeler允许您根据不同的变量集、维度和结果（如收入、销量和商机）创建模型的变体。
+Marketing Campaign Analytics中的模型是一种机器学习模型，用于根据营销人员的投资来衡量和预测指定的结果。 营销接触点和摘要级别的数据可用作输入。 Marketing Campaign Analytics允许您根据不同的变量集、维度和结果（如收入、销量和商机）创建模型的变体。
 
 模型需要：
 
@@ -50,13 +67,29 @@ Mix Modeler中的模型是一种机器学习模型，用于根据营销人员的
 
 首次创建模型时，创建操作会立即启动训练和评分过程。 在初始培训和评分运行完成后，模型见解可供审阅。 随后可重新训练模型。 此外，还可以向模型添加数据，这需要您手动重新核心模型。 随着新的发现和信息的出现，以及需要作出调整才能获得最适合您业务目标的模型，重新培训和重新搜索是一个反复进行的过程。
 
+## 完整funnel建模
+
+{{release-limited-testing-section}}
+
+全面funnel建模允许您为其funnel的实际阶段建模。 例如，从新闻稿注册到购买。 完整funnel建模显示了营销如何通过该funnel移动客户。 完整funnel建模为上funnel渠道提供这些渠道影响下游的转化的点数，并对结果进行协调，以使贡献总计正确，且没有重复计数。
+
+您可以使用完整funnel建模对一个较高的funnel KPI和一个较低的funnel KPI进行建模。
+
+* 高级funnel KPI的示例包括新闻稿注册和其他品牌知名度指标。
+* funnel较低量度的示例是典型的转化量度，如收入和订单。
+
+在注重转化的MMM模型中，上层funnel策略往往信用较低。 完整funnel建模可帮助您了解：
+
+* 哪些媒体和营销策略帮助实现了funnel的上层目标。
+* 哪些媒体和营销策略对转化目标产生了间接影响。 funnel模型的上权重输入到下层的funnel模型中，以便为相关的媒体和营销策略提供更大的权重。
+
 ## 构建模型
 
-要构建模型，请使用选择&#x200B;**[!UICONTROL Open model canvas]**&#x200B;时可用的Mix Modeler分步引导式模型配置流程。 有关更多详细信息，请参阅[构建模型](build.md)。
+要构建模型，请使用选择&#x200B;**[!UICONTROL Open model canvas]**&#x200B;时可用的Marketing Campaign Analytics分步引导式模型配置流程。 有关更多详细信息，请参阅[构建模型](build.md)。
 
 ## 管理模型
 
-要查看当前模型的表格，请在Mix Modeler界面中执行以下操作：
+要查看当前模型的表格，请在Marketing Campaign Analytics界面中执行以下操作：
 
 1. 从左边栏中选择![FileDataS2](/help/assets/icons2/FileData.svg) **[!UICONTROL Models]**。
 
@@ -66,8 +99,8 @@ Mix Modeler中的模型是一种机器学习模型，用于根据营销人员的
 
    | 列名 | 详细信息 |
    |---|---|
-   | **[!UICONTROL Name]** | 模型的名称 |
-   | **[!UICONTROL Description]** | 模型的描述 |
+   | **[!UICONTROL Name]** | 模型的名称。 如果为模型启用了完整funnel建模，您将看到[!BADGE 完整funnel]{type=Informative}标记。 |
+   | **[!UICONTROL Description]** | 模型的描述。 |
    | **[!UICONTROL Conversion event]** | 您为模型选择的转换。 |
    | **[!UICONTROL Run frequency]** | 训练模型的运行频率。 |
    | **[!UICONTROL Last run]** | 模型上次训练的日期和时间。 |
@@ -124,7 +157,9 @@ Mix Modeler中的模型是一种机器学习模型，用于根据营销人员的
 
 1. 从左边栏中选择![FileData](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**。
 
-1. 为模型选择![信息](/help/assets/icons/Info.svg)以显示包含详细信息的弹出窗口。
+1. 为模型选择![信息](/help/assets/icons/Info.svg)以显示包含&#x200B;**[!UICONTROL Description]**、**[!UICONTROL Run frequency]**、**[!UICONTROL Last run status]**、**[!UICONTROL Spend share]**&#x200B;等详细信息的弹出窗口。
+
+
 
 
 ### 复制
@@ -153,18 +188,18 @@ Mix Modeler中的模型是一种机器学习模型，用于根据营销人员的
 
    * 要启用计划，请启用&#x200B;**[!UICONTROL Enable schedule model training and scoring]**。 您只能为经过训练和评分的模型启用计划。
 
-      1. 选择&#x200B;**[!UICONTROL Scoring frequency]**：
+     1. 选择&#x200B;**[!UICONTROL Scoring frequency]**：
 
-         * **[!UICONTROL Daily]**：输入有效的时间（例如`10:00 am`）或使用![时钟](/help/assets/icons/Clock.svg)定义时间。
-         * **[!UICONTROL Weekly]**：选择一周中的某一天并输入有效的时间（例如`10:00 am`）或使用![时钟](/help/assets/icons/Clock.svg)来定义时间。
-         * **[!UICONTROL Monthly]**：从“在每次运行时运行”下拉菜单中选择一个月中的某一天，并输入有效时间（例如`10:00 am`），或使用![时钟](/help/assets/icons/Clock.svg)定义时间。
+        * **[!UICONTROL Daily]**：输入有效的时间（例如`10:00 am`）或使用![时钟](/help/assets/icons/Clock.svg)定义时间。
+        * **[!UICONTROL Weekly]**：选择一周中的某一天并输入有效的时间（例如`10:00 am`）或使用![时钟](/help/assets/icons/Clock.svg)来定义时间。
+        * **[!UICONTROL Monthly]**：从“在每次运行时运行”下拉菜单中选择一个月中的某一天，并输入有效时间（例如`10:00 am`），或使用![时钟](/help/assets/icons/Clock.svg)来定义时间。
 
-      1. 从下拉菜单中选择&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
+     1. 从下拉菜单中选择&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
 
    * 要更新[粒度分析报告字段](/help/models/build.md#granular-insights-reporting-fields)，请在&#x200B;**[!UICONTROL Granular Insights Reporting Fields]**&#x200B;部分中：
-      1. 从&#x200B;**[!UICONTROL Includes]**&#x200B;下的&#x200B;**[!UICONTROL _选择协调字段_]**&#x200B;中选择一个或多个协调字段。 将选定的协调字段添加到该小组中。
-      1. 选择&#x200B;**[!UICONTROL *协调字段&#x200B;*]**![CrossSize100](/help/assets/icons/CrossSize100.svg)以从包含所选协调字段的容器中删除协调字段。
-      1. 选择&#x200B;**[!UICONTROL Clear all]**&#x200B;以删除所有选定的协调字段。
+     1. 从&#x200B;**[!UICONTROL Includes]**&#x200B;下的&#x200B;**[!UICONTROL _选择协调字段_]**&#x200B;中选择一个或多个协调字段。 将选定的协调字段添加到该小组中。
+     1. 选择&#x200B;**[!UICONTROL *协调字段&#x200B;*]**![CrossSize100](/help/assets/icons/CrossSize100.svg)以从包含所选协调字段的容器中删除协调字段。
+     1. 选择&#x200B;**[!UICONTROL Clear all]**&#x200B;以删除所有选定的协调字段。
 
      >[!IMPORTANT]
      >应复制任何具有2026年1月12日之前创建的MTA的模型，以启用精细的模型洞察。<br/>

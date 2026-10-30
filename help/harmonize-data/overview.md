@@ -1,15 +1,20 @@
 ---
 title: 协调数据集概述
-description: 了解如何在Mix Modeler中协调数据。
+description: 了解如何在Marketing Campaign Analytics中协调数据。
 feature: Harmonized Data
 exl-id: 6cb70762-e3b2-46a0-b028-1d6daf3edae5
-TQID: https://experienceleague.adobe.com/9ki9Q-ZAmwmiyYFt-EAaa1ybylaoMauTvoxQ9ux1IEI
+autotag-review: '2026-05-01T09:10:10.340Z'
+TQID: 'https://experienceleague.adobe.com/QFpx2-PjU-GBiyocCsL-myjLoETUJGOikkLcdaGDlGk'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
     internal-label: Harmonized data
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
 subfeature_v2:
   - id: bc2f5225-03d4-4bc8-89ec-99d78c30e6dd
     internal-label: Conversions
@@ -29,20 +34,21 @@ role_v2:
 topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
     internal-label: Data quality
-autotag-review: '2026-05-01T09:10:10.340Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1389'
 ht-degree: 17%
 ---
 # 协调数据集概述
 
-Mix Modeler中的数据性质因数据源而异。 数据可以是：
+{{mm-mca-rebranding}}
+
+Marketing Campaign Analytics中的数据性质因数据源而异。 数据可以是：
 
 * 聚合或摘要数据，例如从围墙花园数据源收集的数据，或通过运行广告牌营销活动、事件或物理广告营销活动收集的离线广告数据（如支出），
 * 事件数据，例如来自第一方数据源的事件数据。 此事件数据可以是通过Adobe Analytics源连接器从Adobe Analytics收集的数据，也可以是通过Experience Platform Web或Mobile SDK或Edge Network API收集的数据，或使用源连接器引入的数据。
 
-Mix Modeler的协调服务将聚合和事件数据吸收到一致的数据视图中。 此数据视图是Mix Modeler中的模型的源。 该服务在不同数据集上使用最高的粒度。 例如，如果一个数据集的粒度为每月，而其余数据集的粒度为每周和每日，则协调服务使用每月粒度创建一个数据视图。
+Marketing Campaign Analytics的协调服务将聚合和事件数据吸收到一致的数据视图中。 此数据视图是Marketing Campaign Analytics中的模型的源。 该服务在不同数据集上使用最高的粒度。 例如，如果一个数据集的粒度为每月，而其余数据集的粒度为每周和每日，则协调服务使用每月粒度创建一个数据视图。
 
 ## 因素
 
@@ -52,7 +58,7 @@ Mix Modeler的协调服务将聚合和事件数据吸收到一致的数据视图
 
 * 外部因素是组织无法控制的因素，但仍会影响您实现的转化。 例如CPI、标普500等。
 
-Mix Modeler中的因子功能使用协调的因子工作流程。 此工作流简化了因子管理方式，提供了模型间的一致性，并提供了直观的体验。
+Marketing Campaign Analytics中的因子功能使用协调的因子工作流程。 此工作流简化了因子管理方式，提供了模型间的一致性，并提供了直观的体验。
 
 作为协调因子工作流程的一部分：
 
@@ -71,7 +77,7 @@ Mix Modeler中的因子功能使用协调的因子工作流程。 此工作流�
 
 ## 统一数据的示例
 
-假设您有以下数据集可用于Mix Modeler。
+假设您有以下数据集可用于Marketing Campaign Analytics。
 
 **数据集1**
 
@@ -164,7 +170,7 @@ Mix Modeler中的因子功能使用协调的因子工作流程。 此工作流�
 
 ## 查看协调的数据
 
-要查看您的协调数据，请在Mix Modeler界面中执行以下操作：
+要查看您的协调数据，请在Marketing Campaign Analytics界面中执行以下操作：
 
 1. 从左边栏中选择![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized datasets]**。
 

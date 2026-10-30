@@ -1,30 +1,34 @@
 ---
 title: 构建计划
-description: 了解如何在Mix Modeler中构建计划。
+description: 了解如何在Marketing Campaign Analytics中构建计划。
 feature: Plans
 exl-id: 6d61d0b2-5871-4d00-9a35-73fff0a1c3e5
-TQID: https://experienceleague.adobe.com/8p0uU5IAWbhwE9L0nVC-au5uyAh05jAJW47l0Jgucy4
+TQID: 'https://experienceleague.adobe.com/8p0uU5IAWbhwE9L0nVC-au5uyAh05jAJW47l0Jgucy4'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 4420f8b550f642dd55fd9d2af9675326e08a8af9
+    internal-label: Insights
+source-git-commit: 67f7acd32f3456e71dbea0baf147bf2dc1e01980
 workflow-type: tm+mt
-source-wordcount: 952
+source-wordcount: '983'
 ht-degree: 0%
-
 ---
-
 # 构建计划
 
-在Mix Modeler中，您可以使用计划向导创建计划。 在计划向导中，您可以设置详细信息和预算，或计划的目标量度，以及用于计划的基础模型。 在指定详细信息、预算、目标量度和模型后，您可以继续使用人工智能推荐的计划或编辑按渠道划分的支出。 您可以选择定义高级配置，了解每次转换的平均收入和渠道成本。
+{{mm-mca-rebranding}}
+
+在Marketing Campaign Analytics中，您可以使用计划向导创建计划。 在计划向导中，您可以设置详细信息和预算，或计划的目标量度，以及用于计划的基础模型。 在指定详细信息、预算、目标量度和模型后，您可以继续使用人工智能推荐的计划或编辑按渠道划分的支出。 您可以选择定义高级配置，了解每次转换的平均收入和渠道成本。
 
 您需要定义要针对其最大化计划的目标。 此目标可以是可支出的预算，也可以是希望实现的目标。 如果目标是目标，则另外还需要指定要使用的目标量度的值：转化、收入、CPA或ROI。
 
-要创建计划，请在Mix Modeler的![PLan](/help/assets/icons/FileChart.svg) **[!UICONTROL Plans]**&#x200B;界面中选择&#x200B;**[!UICONTROL Create plan]**。
+要创建计划，请在Marketing Campaign Analytics的![PLan](/help/assets/icons/FileChart.svg) **[!UICONTROL Plans]**&#x200B;界面中选择&#x200B;**[!UICONTROL Create plan]**。
 
 
 1. 在&#x200B;**[!UICONTROL Plan creation]**&#x200B;屏幕中：
@@ -44,33 +48,33 @@ ht-degree: 0%
 
         此选项允许您为一个或多个日期范围输入预算。
 
-         1. 在&#x200B;**[!UICONTROL Optimize]**&#x200B;容器中：
-            1. 从&#x200B;**[!UICONTROL Select conversion]**&#x200B;下拉菜单中选择转换。
-            1. 从&#x200B;**[!UICONTROL Select model]**&#x200B;下拉菜单中选择模型。
-         1. 通过键入日期或使用![日历](/help/assets/icons/Calendar.svg)选择日期范围来指定&#x200B;**[!UICONTROL Date range]**。
-         1. 输入&#x200B;**[!UICONTROL Budget]**。
-若要添加其他日期范围（每个日期范围都有预算），请选择![日历添加](/help/assets/icons/CalendarAdd.svg) **[!UICONTROL Add row]**。
-要删除日期范围和相关预算，请选择![关闭](/help/assets/icons/Close.svg)。
-         1. 要定义要限制计划的可选最大预算，请执行以下操作：
-            1. 打开&#x200B;**[!UICONTROL Maximize budget]**。
-            1. 指定最大预算的金额。 金额应等于或高于为日期范围指定的预算总额。
+        1. 在&#x200B;**[!UICONTROL Optimize]**&#x200B;容器中：
+           1. 从&#x200B;**[!UICONTROL Select conversion]**&#x200B;下拉菜单中选择转换。
+           1. 从&#x200B;**[!UICONTROL Select model]**&#x200B;下拉菜单中选择一个模型。
+        1. 通过键入日期或使用![日历](/help/assets/icons/Calendar.svg)选择日期范围来指定&#x200B;**[!UICONTROL Date range]**。
+        1. 输入&#x200B;**[!UICONTROL Budget]**。
+           若要添加其他日期范围（每个日期范围都有预算），请选择![日历添加](/help/assets/icons/CalendarAdd.svg) **[!UICONTROL Add row]**。
+           要删除日期范围和相关预算，请选择![关闭](/help/assets/icons/Close.svg)。
+        1. 要定义要限制计划的可选最大预算，请执行以下操作：
+           1. 打开&#x200B;**[!UICONTROL Maximize budget]**。
+           1. 指定最大预算的金额。 金额应等于或高于为日期范围指定的预算总额。
 
 
       * **[!UICONTROL I have a target to achieve]** [!BADGE Beta]
 
         ![计划目标](../assets/plan-target.png)
 
-         1. 在&#x200B;**[!UICONTROL Optimize]**&#x200B;容器中
-            1. 从&#x200B;**[!UICONTROL Select conversion]**&#x200B;下拉菜单中选择转换。
-            1. 从&#x200B;**[!UICONTROL Select target metric]**&#x200B;下拉菜单中选择一个目标量度。 您可以选择介于&#x200B;**[!UICONTROL Conversion]**、**[!UICONTROL CPA]**、**[!UICONTROL Revenue]**&#x200B;或&#x200B;**[!UICONTROL ROI]**&#x200B;之间。
-            1. 从&#x200B;**[!UICONTROL Select model]**&#x200B;下拉菜单中选择模型。
-         1. 通过键入日期或使用![日历](/help/assets/icons/Calendar.svg)选择日期范围来指定日期范围。
-         1. 输入所选目标度量的值。 例如，**[!UICONTROL Total Conversions]**&#x200B;的数字、**[!UICONTROL Paid Marketing ROI]**&#x200B;的百分比或&#x200B;**[!UICONTROL Paid Marketing CPA]**&#x200B;和&#x200B;**[!UICONTROL Total Revenue]**&#x200B;的货币值。
-要添加其他日期范围（每个日期范围都有其目标指标），请选择![CalendarAdd](/help/assets/icons/CalendarAdd.svg) **[!UICONTROL Add row]**。
-要删除日期范围和关联的目标量度，请选择![关闭](/help/assets/icons/Close.svg)。
-         1. 要定义要限制计划的可选最大预算，请执行以下操作：
-            1. 打开&#x200B;**[!UICONTROL Maximize budget]**。
-            1. 指定最大预算的金额。
+        1. 在&#x200B;**[!UICONTROL Optimize]**&#x200B;容器中
+           1. 从&#x200B;**[!UICONTROL Select conversion]**&#x200B;下拉菜单中选择转换。
+           1. 从&#x200B;**[!UICONTROL Select target metric]**&#x200B;下拉菜单中选择一个目标量度。 您可以选择介于&#x200B;**[!UICONTROL Conversion]**、**[!UICONTROL CPA]**、**[!UICONTROL Revenue]**&#x200B;或&#x200B;**[!UICONTROL ROI]**&#x200B;之间。
+           1. 从&#x200B;**[!UICONTROL Select model]**&#x200B;下拉菜单中选择一个模型。
+        1. 通过键入日期或使用![日历](/help/assets/icons/Calendar.svg)选择日期范围来指定日期范围。
+        1. 输入所选目标度量的值。 例如，**[!UICONTROL Total Conversions]**&#x200B;的数字、**[!UICONTROL Paid Marketing ROI]**&#x200B;的百分比或&#x200B;**[!UICONTROL Paid Marketing CPA]**&#x200B;和&#x200B;**[!UICONTROL Total Revenue]**&#x200B;的货币值。
+           要添加其他日期范围（每个日期范围都有其目标指标），请选择![CalendarAdd](/help/assets/icons/CalendarAdd.svg) **[!UICONTROL Add row]**。
+           要删除日期范围和关联的目标量度，请选择![关闭](/help/assets/icons/Close.svg)。
+        1. 要定义要限制计划的可选最大预算，请执行以下操作：
+           1. 打开&#x200B;**[!UICONTROL Maximize budget]**。
+           1. 指定最大预算的金额。
 
 
    1. 选择 **[!UICONTROL Next]**。
@@ -101,14 +105,14 @@ ht-degree: 0%
    * 支持趋势分析。
    * 在配置计划时，确定有效策略并避免错误。
 
-   如果选择历史参考期，则需调整以前的支出模式首选项，Mix Modeler的计划功能可生成符合您期望的计划。 这些计划最终应增强利益相关者的信心，确保营销计划是战略性的、高效的，并且这些计划以经验证的绩效数据和业务需求为基础。
+   如果选择历史参考期，则需调整以前的支出模式首选项，Marketing Campaign Analytics的计划功能可生成符合您期望的计划。 这些计划最终应增强利益相关者的信心，确保营销计划是战略性的、高效的，并且这些计划以经验证的绩效数据和业务需求为基础。
 
    ![花费选择](/help/assets/plan-spend-selection.png)
 
    1. 选择 **[!UICONTROL Spend pattern]**。
 
       * 默认选项为&#x200B;**[!UICONTROL Automatic]**。
-      * 选择&#x200B;**[!UICONTROL Historical reference]**&#x200B;并输入&#x200B;**[!UICONTROL Start date]**&#x200B;以引用Mix Modeler已可用的以往营销支出数据。 **[!UICONTROL End date]**&#x200B;是根据您定义支出模式的日期范围自动确定的。 建议的开始日期是第一个可用的过去营销支出日期。 为了指示您选择了不存在或无效的历史引用时段，您会看到![AlertRed](/help/assets/icons/AlertRed.svg)。
+      * 选择&#x200B;**[!UICONTROL Historical reference]**&#x200B;并输入&#x200B;**[!UICONTROL Start date]**&#x200B;以引用Marketing Campaign Analytics已可用的以往营销支出数据。 **[!UICONTROL End date]**&#x200B;是根据您定义支出模式的日期范围自动确定的。 建议的开始日期是第一个可用的过去营销支出日期。 为了指示您选择了不存在或无效的历史引用时段，您会看到![AlertRed](/help/assets/icons/AlertRed.svg)。
 
    1. 要定义每个渠道的预算，请为&#x200B;**[!UICONTROL Min]**&#x200B;和&#x200B;**[!UICONTROL Max]**&#x200B;输入值或使用滑块。
 
@@ -127,34 +131,34 @@ ht-degree: 0%
 
    * 汇总您的计划名称、模型、日期范围和总预算。
 
-   * 默认情况下，Mix Modeler会使用最新的历史季节性数据自动计算每次转换的平均收入。 在&#x200B;**[!UICONTROL Average Revenue per conversion]**&#x200B;中，您可以定义每次转换的特定平均收入。
+   * 默认情况下，Marketing Campaign Analytics会使用最新的历史季节性数据自动计算每次转换的平均收入。 在&#x200B;**[!UICONTROL Average Revenue per conversion]**&#x200B;中，您可以定义每次转换的特定平均收入。
 
-      1. 对于预算中的每个日期范围：
+     1. 对于预算中的每个日期范围：
 
-         1. 从&#x200B;**[!UICONTROL Date range]**&#x200B;下拉菜单中选择一个日期范围。
-         1. 输入&#x200B;**[!UICONTROL Average revenue]**&#x200B;值。
+        1. 从&#x200B;**[!UICONTROL Date range]**&#x200B;下拉菜单中选择一个日期范围。
+        1. 输入&#x200B;**[!UICONTROL Average revenue]**&#x200B;值。
 
-      1. 选择![AddCircle](/help/assets/icons/AddCircle.svg)添加每个转化单位的自定义平均收入以添加日期范围。
-      1. 选择![RemoveCircle](/help/assets/icons/RemoveCircle.svg)以删除日期范围。
+     1. 选择![AddCircle](/help/assets/icons/AddCircle.svg)添加每个转化单位的自定义平均收入以添加日期范围。
+     1. 选择![RemoveCircle](/help/assets/icons/RemoveCircle.svg)以删除日期范围。
 
      >[!NOTE]
      >
      >如果您的模型不包括历史收入数据，则必须为为预算指定的每个日期范围定义每次转换的平均收入。
      >
 
-   * 默认情况下，Mix Modeler会使用最新的历史季节性数据自动计算渠道成本。 在&#x200B;**[!UICONTROL Channel costs]**&#x200B;中，您可以定义自定义渠道成本。
+   * 默认情况下，Marketing Campaign Analytics会使用最新的历史季节性数据自动计算渠道成本。 在&#x200B;**[!UICONTROL Channel costs]**&#x200B;中，您可以定义自定义渠道成本。
 
-      1. 对于模型中的每个渠道，定义自定义渠道成本。
+     1. 对于模型中的每个渠道，定义自定义渠道成本。
 
-         1. 从&#x200B;**[!UICONTROL Channel]**&#x200B;下拉菜单中选择一个渠道。
-         1. 对于预算中的每个日期范围：
-            1. 从&#x200B;**[!UICONTROL Date range]**&#x200B;下拉菜单中选择一个日期范围。
-            1. 输入&#x200B;**[!UICONTROL Average revenue]**&#x200B;值。
-         1. 选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add custom average revenue per conversion unit]**&#x200B;以添加日期范围。
-         1. 选择![RemoveCircle](/help/assets/icons/RemoveCircle.svg)以删除日期范围。
+        1. 从&#x200B;**[!UICONTROL Channel]**&#x200B;下拉菜单中选择一个渠道。
+        1. 对于预算中的每个日期范围：
+           1. 从&#x200B;**[!UICONTROL Date range]**&#x200B;下拉菜单中选择一个日期范围。
+           1. 输入&#x200B;**[!UICONTROL Average revenue]**&#x200B;值。
+        1. 选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add custom average revenue per conversion unit]**&#x200B;以添加日期范围。
+        1. 选择![RemoveCircle](/help/assets/icons/RemoveCircle.svg)以删除日期范围。
 
-      1. 选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add custom channel cost]**&#x200B;以添加频道。
-      1. 选择![CrossSize400](/help/assets/icons/CrossSize400.svg)以删除自定义渠道。
+     1. 选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add custom channel cost]**&#x200B;以添加频道。
+     1. 选择![CrossSize400](/help/assets/icons/CrossSize400.svg)以删除自定义渠道。
 
 
 1. 完成后，选择&#x200B;**[!UICONTROL Create]**。

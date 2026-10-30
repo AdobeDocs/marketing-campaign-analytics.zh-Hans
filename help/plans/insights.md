@@ -1,18 +1,18 @@
 ---
 title: 计划洞察
-description: 了解如何在Mix Modeler中查看计划的见解并编辑计划。
+description: 了解如何在Marketing Campaign Analytics中查看计划的见解并编辑计划。
 feature: Plans
 exl-id: 91385595-284f-4fcb-b54b-9539905e552b
 autotag-review: '2026-04-28T06:09:37.014Z'
-TQID: 'https://experienceleague.adobe.com/Qi-C1-9Dbi71TbUTi64xlxs1pNXijt0nasTghWiD6AM'
+TQID: 'https://experienceleague.adobe.com/K1G-WhaMSmzx0tJWgy6NrdDj5jQQRDJQjdRle7-ayJ4'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
-  - id: f40f1683-8300-4054-aab8-77da06ad63ff
-    internal-label: Models
   - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
     internal-label: Plans
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
 subfeature_v2:
   - id: a9505d76-24a1-4ffe-bd01-6ac32d5af453
     internal-label: Model insights
@@ -24,13 +24,14 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1204'
 ht-degree: 0%
 ---
 # 计划洞察
 
+{{mm-mca-rebranding}}
 
 在[!UICONTROL Plan insights]中创建您的计划分析，显示计划所基于的[!UICONTROL Model]、[!UICONTROL Data range]和[!UICONTROL Plan target]。
 
@@ -127,14 +128,14 @@ ht-degree: 0%
    - 支持趋势分析。
    - 在配置计划时，确定有效策略并避免错误。
 
-   如果选择历史参考期，则需调整以前的支出模式首选项，Mix Modeler的计划功能可生成符合您期望的计划。 这些计划最终应增强利益相关者的信心，确保营销计划是战略性的、高效的，并且这些计划以经验证的绩效数据和业务需求为基础。
+   如果选择历史参考期，则需调整以前的支出模式首选项，Marketing Campaign Analytics的计划功能可生成符合您期望的计划。 这些计划最终应增强利益相关者的信心，确保营销计划是战略性的、高效的，并且这些计划以经验证的绩效数据和业务需求为基础。
 
    ![花费选择](/help/assets/plan-spend-selection.png)
 
    1. 选择 **[!UICONTROL Spend pattern]**。
 
       - 默认选项为&#x200B;**[!UICONTROL Automatic]**。
-      - 选择&#x200B;**[!UICONTROL Historical reference]**&#x200B;并输入&#x200B;**[!UICONTROL Start date]**&#x200B;以引用Mix Modeler已可用的以往营销支出数据。 **[!UICONTROL End date]**&#x200B;是根据所选的数据范围自动确定的。 建议的开始日期是第一个可用的过去营销支出数据。 为了表示您选择了不存在的历史参考期，您会看到![AlertRed](/help/assets/icons/AlertRed.svg)。
+      - 选择&#x200B;**[!UICONTROL Historical reference]**&#x200B;并输入&#x200B;**[!UICONTROL Start date]**&#x200B;以引用Marketing Campaign Analytics已可用的以往营销支出数据。 **[!UICONTROL End date]**&#x200B;是根据所选的数据范围自动确定的。 建议的开始日期是第一个可用的过去营销支出数据。 为了表示您选择了不存在的历史参考期，您会看到![AlertRed](/help/assets/icons/AlertRed.svg)。
 
 
    1. 要修改每个渠道的预算，请修改&#x200B;**[!UICONTROL Min]**&#x200B;和&#x200B;**[!UICONTROL Max]**&#x200B;的值或使用滑块。
@@ -159,7 +160,7 @@ ht-degree: 0%
 
            1. 在&#x200B;**[!UICONTROL Optimize]**&#x200B;容器中：
               1. 从&#x200B;**[!UICONTROL Select conversion]**&#x200B;下拉菜单中选择转换。
-              1. 从&#x200B;**[!UICONTROL Select model]**&#x200B;下拉菜单中选择模型。
+              1. 从&#x200B;**[!UICONTROL Select model]**&#x200B;下拉菜单中选择一个模型。
            1. 通过键入日期或使用![日历](/help/assets/icons/Calendar.svg)选择日期范围来指定&#x200B;**[!UICONTROL Date range]**。
            1. 输入&#x200B;**[!UICONTROL Budget]**。
               若要添加其他日期范围（每个日期范围都有预算），请选择![日历添加](/help/assets/icons/CalendarAdd.svg) **[!UICONTROL Add row]**。
@@ -176,7 +177,7 @@ ht-degree: 0%
            1. 在&#x200B;**[!UICONTROL Optimize]**&#x200B;容器中
               1. 从&#x200B;**[!UICONTROL Select conversion]**&#x200B;下拉菜单中选择转换。
               1. 从&#x200B;**[!UICONTROL Select target metric]**&#x200B;下拉菜单中选择一个目标量度。 您可以选择介于&#x200B;**[!UICONTROL Conversion]**、**[!UICONTROL CPA]**、**[!UICONTROL Revenue]**&#x200B;或&#x200B;**[!UICONTROL ROI]**&#x200B;之间。
-              1. 从&#x200B;**[!UICONTROL Select model]**&#x200B;下拉菜单中选择模型。
+              1. 从&#x200B;**[!UICONTROL Select model]**&#x200B;下拉菜单中选择一个模型。
            1. 通过键入日期或使用![日历](/help/assets/icons/Calendar.svg)选择日期范围来指定日期范围。
            1. 输入所选目标度量的值。 例如，**[!UICONTROL Conversion]**&#x200B;的数字、**[!UICONTROL ROI]**&#x200B;的百分比或&#x200B;**[!UICONTROL CPA]**&#x200B;和&#x200B;**[!UICONTROL Revenue]**&#x200B;的货币值。
               要添加其他日期范围（每个日期范围都有其目标指标），请选择![CalendarAdd](/help/assets/icons/CalendarAdd.svg) **[!UICONTROL Add row]**。
@@ -193,7 +194,7 @@ ht-degree: 0%
 
    - 汇总您的计划名称、模型、日期范围和总预算。
 
-   - 默认情况下，Mix Modeler会使用最新的历史季节性数据自动计算每次转换的平均收入。 在&#x200B;**[!UICONTROL Average Revenue per conversion]**&#x200B;中，您可以定义每次转换的特定平均收入。
+   - 默认情况下，Marketing Campaign Analytics会使用最新的历史季节性数据自动计算每次转换的平均收入。 在&#x200B;**[!UICONTROL Average Revenue per conversion]**&#x200B;中，您可以定义每次转换的特定平均收入。
 
    1. 对于预算中的每个日期范围：
       1. 从&#x200B;**[!UICONTROL Date range]**&#x200B;下拉菜单中选择一个日期范围。
@@ -206,7 +207,7 @@ ht-degree: 0%
    >如果您的模型不包括历史收入数据，则必须为为预算指定的每个日期范围定义每次转换的平均收入。
    >
 
-   - 默认情况下，Mix Modeler会使用最新的历史季节性数据自动计算渠道成本。 在&#x200B;**[!UICONTROL Channel costs]**&#x200B;中，您可以定义自定义渠道成本。
+   - 默认情况下，Marketing Campaign Analytics会使用最新的历史季节性数据自动计算渠道成本。 在&#x200B;**[!UICONTROL Channel costs]**&#x200B;中，您可以定义自定义渠道成本。
 
    1. 对于模型中的每个渠道，定义自定义渠道成本。
       1. 从&#x200B;**[!UICONTROL Channel]**&#x200B;下拉菜单中选择一个渠道。

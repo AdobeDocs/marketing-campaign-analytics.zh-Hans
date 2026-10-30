@@ -1,13 +1,13 @@
 ---
 title: 计划的绩效
-description: 了解如何在Mix Modeler中使用性能来规划概述。
+description: 了解如何在Marketing Campaign Analytics中使用性能来规划概述。
 feature: Dashboard, Plans, Models
 exl-id: 930fc1d5-8e28-4610-af7b-c4ec91f86a8a
 autotag-review: '2026-05-01T09:20:18.412Z'
-TQID: 'https://experienceleague.adobe.com/iRFbGXoCx5jzg6ATId2tNLTfyigoTzD4JQIqlPU5isU'
+TQID: 'https://experienceleague.adobe.com/wz2IEd-oBB8N-BSAdXMkcz9xS0xn7l4FlRJoBaQcCAw'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
     internal-label: Plans
@@ -29,24 +29,33 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 ---
 # 计划的绩效
 
+{{mm-mca-rebranding}}
+
 >[!NOTE]
 >
->Mix Modeler ![主页](/help/assets/icons/Home.svg) **[!UICONTROL Overview]**&#x200B;中的&#x200B;**[!UICONTROL Performance to plan]** [!BADGE Beta]{type=Informative}选项卡是测试版功能，其功能可能会发生更改。 该功能仅对有限数量的客户可用。
+>Marketing Campaign Analytics ![主页](/help/assets/icons/Home.svg) **[!UICONTROL Overview]**&#x200B;中的&#x200B;**[!UICONTROL Performance to plan]** [!BADGE Beta]{type=Informative}选项卡是测试版功能，其功能可能会发生更改。 该功能仅对有限数量的客户可用。
 
-Mix Modeler ![主页](/help/assets/icons/Home.svg) **[!UICONTROL Overview]**&#x200B;中的&#x200B;**[!UICONTROL Plans]** [!BADGE Beta]{type=Informative}选项卡提供了一个跟踪仪表板，用于监视营销针对计划的执行情况。 您可以通过状态卡和可视化图表跟踪实际绩效与计划绩效。
+Marketing Campaign Analytics ![主页](/help/assets/icons/Home.svg) **[!UICONTROL Overview]**&#x200B;中的&#x200B;**[!UICONTROL Plans]** [!BADGE Beta]{type=Informative}选项卡提供了一个跟踪仪表板，用于监视营销针对计划的执行情况。 您可以通过状态卡和可视化图表跟踪实际绩效与计划绩效。
 
 仪表板可帮助您识别差距、发现风险或机会，并及时调整计划和预算。
 
 要选择为KPI状态卡和可视化图表显示的数据，请执行以下操作：
 
-* 使用&#x200B;**[!UICONTROL _选择一个选项……_]**，从&#x200B;**[!UICONTROL Plan name]**&#x200B;下拉菜单中选择一个计划。
+* 使用&#x200B;**[!UICONTROL _选择选项……_]**，从&#x200B;**[!UICONTROL Plan name]**&#x200B;下拉菜单中选择计划。
 
 * 指定日期期间。 要更改日期期间，请使用![日历](/help/assets/icons/Calendar.svg)手动输入开始日期和结束日期，或选择日期期间。
 
