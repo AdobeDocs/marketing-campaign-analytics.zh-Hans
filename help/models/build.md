@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Email marketing
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 1b5be926bcc785602e9f722eae790f630b9564d4
+source-git-commit: 1e187d334357fc2696b7a15796d669f9632b63cb
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 8%
@@ -280,17 +280,18 @@ ht-degree: 8%
 
 ### Customer Journey Analytics {#cja}
 
-
 >[!CONTEXTUALHELP]
 >id="model_enable_cja"
 >title="启用 Customer Journey Analytics"
 >abstract="要使得分数据可供Customer Journey Analytics用于报表和分析，请启用此设置。 启用后，必须删除模型才能禁用此设置。"
 
+{{release-limited-testing-section}}
+
 当您有权使用Customer Journey Analytics，并且在特定沙盒中为Marketing Campaign Analytics创建了一个或多个[数据集规则](/help/harmonize-data/dataset-rules.md)时：
 
 * 在您的Experience Platform沙盒中创建两个专用的Marketing Campaign Analytics数据集。
-* 已创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Enabled Connection (_sandbox-name _)]**&#x200B;的Customer Journey Analytics [连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/overview)，其中包含专用的Marketing Campaign Analytics数据集。
-* 已基于连接创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;的Customer Journey Analytics [数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)。
+* 已创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Enabled Connection (_sandbox-name _)]**的Customer Journey Analytics [连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/overview)，其中包含专用的Marketing Campaign Analytics数据集。
+* 已基于连接创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**的Customer Journey Analytics [数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)。
 
 连接和数据视图都是系统拥有的。 您无法更新或删除连接或数据视图。
 
@@ -303,8 +304,8 @@ ht-degree: 8%
 要在Customer Journey Analytics [工作区项目](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/home)中快速报告和分析Marketing Campaign Analytics数据，请执行以下操作：
 
 1. 选择&#x200B;**[!UICONTROL Workspace]** > **[!UICONTROL Adobe templates]**。
-1. 选择专用的&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;作为用于项目的数据视图。
-1. 选择&#x200B;**[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates)。
+1. 选择专用的&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**作为用于项目的数据视图。
+1. 选择&#x200B;**[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [模板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates)。
    * 选择&#x200B;**[!UICONTROL Preview]**&#x200B;查看预览。
 
      ![Marketing Campaign Analytics模板预览](/help/assets/model-cja-enable-template.png)
