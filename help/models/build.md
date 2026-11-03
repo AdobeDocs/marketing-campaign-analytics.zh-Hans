@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Email marketing
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 803bbfb863f55ef5d043c1e1592acd8c6d4bab44
+source-git-commit: 1b5be926bcc785602e9f722eae790f630b9564d4
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 7%
+source-wordcount: '2134'
+ht-degree: 8%
 ---
 # 构建模型
 
@@ -140,16 +140,16 @@ ht-degree: 7%
 
      ![模型 — 因子步骤funnel](../assets/model-factors-dataset-step-funnel.png)
 
-     * 要定义因果关系，请在&#x200B;**[!UICONTROL Causal relationship]** s表中，为每个渠道(**[!UICONTROL Source]**)选择![SelectBox](/help/assets/icons/SelectBox.svg)，以确定上转换KPI（在&#x200B;**[!UICONTROL Full funnel modeling]**&#x200B;分区中选为&#x200B;**[!UICONTROL Upper funnel conversion]**）和下转换KPI（在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;分区中选为&#x200B;**[!UICONTROL Conversion]**）是否受该渠道的影响。
+     * 要定义因果关系，请在&#x200B;**[!UICONTROL Causal relationship]** s表中，为每个渠道(**[!UICONTROL Source]**)选择![SelectBox](/help/assets/icons/SelectBox.svg)以指示该渠道是否影响上下转换KPI。
 
-       您可以为上转化KPI和下转化KPI选择列标题![SelectBox](/help/assets/icons/SelectBox.svg)以快速定义所有渠道都会影响KPI。
+       您可以为上转化KPI和下转化KPI选择列标题![SelectBox](/help/assets/icons/SelectBox.svg)，以便快速定义所有渠道都会影响KPI。
 
-     * 在定义因子后，您可以定义因子因果关系。 要定义聚合器因果关系，请在&#x200B;**[!UICONTROL Factor causal relationships]**&#x200B;表中，为每个因子(**[!UICONTROL Factor]**)选择![SelectBox](/help/assets/icons/SelectBox.svg)，以确定上转换KPI（在&#x200B;**[!UICONTROL Full funnel modeling]**&#x200B;节中选为&#x200B;**[!UICONTROL Upper funnel conversion]**）和下转换KPI（在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;节中选为&#x200B;**[!UICONTROL Conversion]**）是否受该因子影响。
+     * 在定义因子后，您可以定义因子因果关系。 要定义因子因果关系，请在&#x200B;**[!UICONTROL Factor causal relationships]**&#x200B;表中，为每个因子(**[!UICONTROL Factor]**)选择![SelectBox](/help/assets/icons/SelectBox.svg)以指示因子是否影响上下转换KPI。
 
-       您可以为上转换KPI和下转换KPI选择列标题![SelectBox](/help/assets/icons/SelectBox.svg)以快速定义影响KPI的所有因素。
+       您可以为上转换KPI和下转换KPI选择列标题![SelectBox](/help/assets/icons/SelectBox.svg)，以便快速定义所有影响KPI的因素。
 
 
-1. 要为模型定义回看窗口期，请在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;部分的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the conversion]**&#x200B;中输入一个介于`1`和`52`之间的值。
+1. 要定义模型回顾时间范围，请在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;部分的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the conversion]**&#x200B;中输入一个介于`1`和`52`之间的值。
 
    如果您的模型已启用[完全funnel建模](./overview.md#full-funnel-modeling)：
 
@@ -158,7 +158,7 @@ ht-degree: 7%
    * 要定义上层funnel的回看窗口期，请在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;部分的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the upper funnel conversion]**&#x200B;中为&#x200B;**[!UICONTROL Upper funnel]**&#x200B;输入一个介于`1`和`52`之间的值。
 
 
-1. 要定义模型的训练时间范围，请在&#x200B;**[!UICONTROL Define training window]**&#x200B;处，选择开始评分转化的位置。
+1. 要定义模型的训练时间范围，请在&#x200B;**[!UICONTROL Define training window]**&#x200B;处选择开始评分转化的位置。
 
    ![模型 — 定义训练时段](/help/assets/model-define-training-window.png)
 
@@ -168,7 +168,7 @@ ht-degree: 7%
 
    * **[!UICONTROL Manually input a training window]**. 选中后，在&#x200B;**[!UICONTROL Include events the following years prior to a conversion]**&#x200B;中定义年数。
 
-   模型需要此输入。 年数决定了您可以在&#x200B;**[!UICONTROL Advanced]**&#x200B;步骤中配置的渠道adstock的上限方式。
+   模型需要此输入。 年数决定了可在&#x200B;**[!UICONTROL Advanced]**&#x200B;步骤中配置的渠道adstock的上限方式。
 
 1. 选择&#x200B;**[!UICONTROL Next]**&#x200B;以继续下一步骤。 如果需要更多配置，请使用红色轮廓和文本说明需要哪些其他配置。 <br/>选择&#x200B;**[!UICONTROL Back]**&#x200B;以返回上一步。 <br/>选择&#x200B;**[!UICONTROL Cancel]**&#x200B;取消模型配置。
 
@@ -195,7 +195,7 @@ ht-degree: 7%
 
 * 建议使用此设置，尤其是在以下情况下：
   * 渠道没有足够的观察次数（例如，消费频率低、展示次数或点击次数少）。
-  * 您正在对数据可能稀疏的尖峰但常规且潜在的高消费媒体（如某些品牌的电视节目）建模。
+  * 您正在对数据稀疏的尖峰但常规且潜在的高消费媒体（如某些品牌的电视节目）建模。
 
   >[!NOTE]
   >
@@ -234,7 +234,7 @@ ht-degree: 7%
 
 在&#x200B;**[!UICONTROL Channel adstock]**&#x200B;部分中，您可以为模型中定义的每个渠道（营销渠道）定义单个Adstock回看（结转或衰减效果）和滞后（延迟响应时间）。
 
-此渠道adstock配置允许对不同的营销渠道如何随着时间推移影响业务结果进行细粒度控制。 或者，您可以使用系统缺省值和“一刀切”配置。
+此渠道adstock配置允许对不同的营销渠道如何随着时间推移影响业务结果进行细粒度控制。 或者，您可以使用系统默认值和标准配置。
 
 渠道adstock配置可帮助您捕获渠道特定的细微差别。 例如，电视广告的长期影响，付费搜索的短期影响，或者影响者支出与可观察转化之间的滞后。 尝试使用adstock回顾和滞后参数，生成更准确、量身定制且值得信赖的见解。 最终，渠道adstock配置可以带来更准确的预算分配和更好的业务决策。
 
@@ -246,7 +246,7 @@ ht-degree: 7%
 
 * 对于每个渠道(**[!UICONTROL Name]**)，定义一个&#x200B;**[!UICONTROL Lag (weeks)]**、**[!UICONTROL Min Lookback (weeks)]**&#x200B;和&#x200B;**[!UICONTROL Max Lookback (weeks)]**&#x200B;值。 对于每个值：
 
-  * 使用![加](/help/assets/icons/Add.svg)增加值，![减](/help/assets/icons/Subtract.svg)减少值，或手动输入值。
+  * 若要增加值，请使用![加](/help/assets/icons/Add.svg)；若要减少值，请使用![减](/help/assets/icons/Subtract.svg)；或手动输入值。
 
   每个渠道的滞后周数加上最大回顾周数之和最多为配置的培训时段的八分之一。 这一上限允许模型拥有足够的数据来学习广告素材库效果。 例如，对于两年的培训期，渠道的&#x200B;**[!UICONTROL Lag (weeks)]**&#x200B;和&#x200B;**[!UICONTROL Lookback (weeks)]**&#x200B;的最大值为13周。 此上限在您定义值时强制执行。
 
@@ -278,6 +278,38 @@ ht-degree: 7%
 1. 从下拉菜单中选择&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
 
 
+### Customer Journey Analytics {#cja}
+
+
+>[!CONTEXTUALHELP]
+>id="model_enable_cja"
+>title="启用 Customer Journey Analytics"
+>abstract="要使得分数据可供Customer Journey Analytics用于报表和分析，请启用此设置。 启用后，必须删除模型才能禁用此设置。"
+
+当您有权使用Customer Journey Analytics，并且在特定沙盒中为Marketing Campaign Analytics创建了一个或多个[数据集规则](/help/harmonize-data/dataset-rules.md)时：
+
+* 在您的Experience Platform沙盒中创建两个专用的Marketing Campaign Analytics数据集。
+* 已创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Enabled Connection (_sandbox-name _)]**的Customer Journey Analytics [连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/overview)，其中包含专用的Marketing Campaign Analytics数据集。
+* 已基于连接创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**的Customer Journey Analytics [数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)。
+
+连接和数据视图都是系统拥有的。 您无法更新或删除连接或数据视图。
+
+要通过上述数据集、连接和数据视图将模型得分数据提供给Customer Journey Analytics，请执行以下操作：
+
+* 选择 **[!UICONTROL Enable scores for Customer Journey Analytics]**。
+
+  启用此设置后，只能通过删除模型来禁用设置。
+
+要在Customer Journey Analytics [工作区项目](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/home)中快速报告和分析Marketing Campaign Analytics数据，请执行以下操作：
+
+1. 选择&#x200B;**[!UICONTROL Workspace]** > **[!UICONTROL Adobe templates]**。
+1. 选择专用的&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**作为用于项目的数据视图。
+1. 选择&#x200B;**[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [模板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates)。
+   * 选择&#x200B;**[!UICONTROL Preview]**&#x200B;查看预览。
+
+     ![Marketing Campaign Analytics模板预览](/help/assets/model-cja-enable-template.png)
+   * 选择&#x200B;**[!UICONTROL Use template]**&#x200B;以基于模板创建项目。
+
 ### 粒度分析报表字段
 
 **[!UICONTROL Granular insights reporting fields]**&#x200B;部分使用粒度增量报表功能。 此功能允许您选择协调的字段来细分转化和接触点增量分数。
@@ -286,7 +318,7 @@ ht-degree: 7%
 
 您可以定义这些协调的字段，以便使用精细的报表列在模型的报表中向下扩展，而不必创建单独的模型。
 
-例如，您构建了一个侧重于收入的模型，但同时您也对促销活动、媒体类型、地区和流量源效果感兴趣。 如果没有粒度的增量报表功能，您将必须构建四个单独的模型。 利用细粒度的增量报告功能，您可以根据促销活动、媒体类型、区域和流量源来细分收入模型。
+例如，您构建了一个以收入为中心的模型，但同时您也对促销活动、媒体类型、地区和流量源性能感兴趣。 如果没有粒度的增量报表功能，您必须构建四个单独的模型。 利用细粒度的增量报告功能，您可以根据促销活动、媒体类型、区域和流量源来细分收入模型。
 
 1. 从&#x200B;**[!UICONTROL Includes]**&#x200B;下的&#x200B;**[!UICONTROL _选择协调字段_]**&#x200B;中选择一个或多个协调字段。 将选定的协调字段添加到该小组中。
 1. 选择&#x200B;**[!UICONTROL *协调字段&#x200B;*]**![CrossSize100](/help/assets/icons/CrossSize100.svg)以从包含所选协调字段的容器中删除协调字段。
