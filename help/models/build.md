@@ -289,8 +289,8 @@ ht-degree: 8%
 当您有权使用Customer Journey Analytics，并且在特定沙盒中为Marketing Campaign Analytics创建了一个或多个[数据集规则](/help/harmonize-data/dataset-rules.md)时：
 
 * 在您的Experience Platform沙盒中创建两个专用的Marketing Campaign Analytics数据集。
-* 已创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Enabled Connection (_sandbox-name _)]**的Customer Journey Analytics [连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/overview)，其中包含专用的Marketing Campaign Analytics数据集。
-* 已基于连接创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**的Customer Journey Analytics [数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)。
+* 已创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Enabled Connection (_sandbox-name _)]**&#x200B;的Customer Journey Analytics [连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/overview)，其中包含专用的Marketing Campaign Analytics数据集。
+* 已基于连接创建名为&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;的Customer Journey Analytics [数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)。
 
 连接和数据视图都是系统拥有的。 您无法更新或删除连接或数据视图。
 
@@ -303,7 +303,7 @@ ht-degree: 8%
 要在Customer Journey Analytics [工作区项目](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/home)中快速报告和分析Marketing Campaign Analytics数据，请执行以下操作：
 
 1. 选择&#x200B;**[!UICONTROL Workspace]** > **[!UICONTROL Adobe templates]**。
-1. 选择专用的&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**作为用于项目的数据视图。
+1. 选择专用的&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;作为用于项目的数据视图。
 1. 选择&#x200B;**[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [模板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates)。
    * 选择&#x200B;**[!UICONTROL Preview]**&#x200B;查看预览。
 
