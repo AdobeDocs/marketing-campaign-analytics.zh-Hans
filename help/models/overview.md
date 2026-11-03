@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
+source-git-commit: c75532d37a87f39cb61eabd58333b39895cf3a69
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1329'
 ht-degree: 0%
 ---
 # 模型概述
@@ -49,7 +49,7 @@ Marketing Campaign Analytics中的模型功能允许您配置、训练特定于�
 
 这些模型基于您在应用程序工作流程中创建的统一数据。
 
-Marketing Campaign Analytics中的模型是一种机器学习模型，用于根据营销人员的投资来衡量和预测指定的结果。 营销接触点和摘要级别的数据可用作输入。 Marketing Campaign Analytics允许您根据不同的变量集、维度和结果（如收入、销量和商机）创建模型的变体。
+Marketing Campaign Analytics中的模型是一种机器学习模型，用于根据营销投资测量和预测指定的结果。 营销接触点和摘要级别的数据可用作输入。 Marketing Campaign Analytics允许您根据不同的变量集、维度和结果（如收入、销量和商机）创建模型的变体。
 
 模型需要：
 
@@ -65,7 +65,7 @@ Marketing Campaign Analytics中的模型是一种机器学习模型，用于根�
 * 预先了解来自其他来源的营销贡献，例如以往的利益相关者经验、增量测试、其他模型。
 * 支出份额，在营销数据稀疏时使用相对支出份额作为代理。
 
-首次创建模型时，创建操作会立即启动训练和评分过程。 在初始培训和评分运行完成后，模型见解可供审阅。 随后可重新训练模型。 此外，还可以向模型添加数据，这需要您手动重新核心模型。 随着新的发现和信息的出现，以及需要作出调整才能获得最适合您业务目标的模型，重新培训和重新搜索是一个反复进行的过程。
+首次创建模型时，创建操作会立即启动训练和评分过程。 在初始培训和评分运行完成后，模型见解可供审阅。 随后重新训练模型。 此外，当数据添加到模型时，需要手动重新核心模型。 随着新的发现和信息的出现，以及需要作出调整才能获得最适合您业务目标的模型，重新培训和重新搜索是一个反复进行的过程。
 
 ## 完整funnel建模
 
@@ -81,7 +81,7 @@ Marketing Campaign Analytics中的模型是一种机器学习模型，用于根�
 在注重转化的MMM模型中，上层funnel策略往往信用较低。 完整funnel建模可帮助您了解：
 
 * 哪些媒体和营销策略帮助实现了funnel的上层目标。
-* 哪些媒体和营销策略对转化目标产生了间接影响。 funnel模型的上权重输入到下层的funnel模型中，以便为相关的媒体和营销策略提供更大的权重。
+* 哪些媒体和营销策略对转化目标产生了间接影响。 funnel模型上方的权重作为下方funnel模型的输入，以赋予相关的媒体和营销策略更高的权重。
 
 ## 构建模型
 
@@ -108,7 +108,7 @@ Marketing Campaign Analytics中的模型是一种机器学习模型，用于根�
 
    要按升序![ArrowMoveUpS2](/help/assets/icons2/ArrowMoveUp.svg)或降序![ArrowMoveDownS2](/help/assets/icons2/ArrowMoveDown.svg)对任意列的表进行排序，请选择列的标题。
 
-   要对&#x200B;**[!UICONTROL Name]**&#x200B;列进行排序或调整其大小，请选择&#x200B;**[!UICONTROL Name]** ![V形向下](/help/assets/icons/ChevronDown.svg)。 从上下文菜单中选择&#x200B;**[!UICONTROL Sort ascending]**、**[!UICONTROL Sort descending]**&#x200B;或&#x200B;**[!UICONTROL Resize column]**。 或者，您可以将鼠标悬停在列分隔符上以调整&#x200B;**[!UICONTROL Name]**&#x200B;列的大小。
+   要对&#x200B;**[!UICONTROL Name]**&#x200B;列进行排序或调整其大小，请选择&#x200B;**[!UICONTROL Name]** ![V形向下](/help/assets/icons/ChevronDown.svg)。 从上下文菜单中选择&#x200B;**[!UICONTROL Sort ascending]**、**[!UICONTROL Sort descending]**&#x200B;或&#x200B;**[!UICONTROL Resize column]**。 要调整&#x200B;**[!UICONTROL Name]**&#x200B;列的大小，请将鼠标悬停在列分隔符上。
 
    模型的报告状态取决于模型在其生命周期中的位置。 例如，模型是否创建、（重新）训练成功与否或（重新）评分成功与否。
 
@@ -195,6 +195,12 @@ Marketing Campaign Analytics中的模型是一种机器学习模型，用于根�
         * **[!UICONTROL Monthly]**：从“在每次运行时运行”下拉菜单中选择一个月中的某一天，并输入有效时间（例如`10:00 am`），或使用![时钟](/help/assets/icons/Clock.svg)来定义时间。
 
      1. 从下拉菜单中选择&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
+
+   * 如果启用了完整funnel模型，则会显示已禁用的启用完整funnel归因。 您无法修改此设置。
+
+   * 要[使得分数据可用于Customer Journey Analytics](build.md#customer-journey-analytics)，请选择&#x200B;**[!UICONTROL Enable scores for Customer Journey Analytics]**。
+
+     为Customer Journey Analytics启用得分后，除非删除模型，否则无法禁用此设置。
 
    * 要更新[粒度分析报告字段](/help/models/build.md#granular-insights-reporting-fields)，请在&#x200B;**[!UICONTROL Granular Insights Reporting Fields]**&#x200B;部分中：
      1. 从&#x200B;**[!UICONTROL Includes]**&#x200B;下的&#x200B;**[!UICONTROL _选择协调字段_]**&#x200B;中选择一个或多个协调字段。 将选定的协调字段添加到该小组中。
