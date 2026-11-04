@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Optimization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
+source-git-commit: 5dfbd7542422d93969c2ffe44475d847693e8910
 workflow-type: tm+mt
-source-wordcount: '3099'
+source-wordcount: '3122'
 ht-degree: 10%
 ---
 # 模型洞察
@@ -154,6 +154,8 @@ ht-degree: 10%
 >[!ENDTABS]
 
 将鼠标悬停在任意流上会看到一个弹出窗口，其中包含特定funnel流的更多详细信息。
+
+与选定的funnel上转换关联的渠道（在[转换](/help/harmonize-data/conversions.md)中定义）显示在可视化图表的中心（例如： **[!UICONTROL Store]**）。
 
 ### 接触点细分
 
