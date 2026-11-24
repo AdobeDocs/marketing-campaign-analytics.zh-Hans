@@ -35,7 +35,7 @@ topic_v2:
 source-git-commit: 1e187d334357fc2696b7a15796d669f9632b63cb
 workflow-type: tm+mt
 source-wordcount: '2134'
-ht-degree: 8%
+ht-degree: 10%
 ---
 # 构建模型
 
@@ -283,7 +283,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="model_enable_cja"
 >title="启用 Customer Journey Analytics"
->abstract="要使得分数据可供Customer Journey Analytics用于报表和分析，请启用此设置。 启用后，必须删除模型才能禁用此设置。"
+>abstract="要使得分数据可供 Customer Journey Analytics 用于报告和分析，请启用此设置。 启用后，必须删除模型才能禁用此设置。"
 
 {{release-limited-testing-section}}
 
